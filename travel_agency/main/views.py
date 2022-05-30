@@ -6,7 +6,7 @@ from django.urls import reverse_lazy
 
 from django.utils.translation import gettext as _
 
-from .models import Contact, City
+from .models import Contact, City, Gallery
 
 class HomeCreateView(CreateView):
     model = Contact
@@ -17,7 +17,9 @@ class HomeCreateView(CreateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         city = City.objects.all()
+        gallery = Gallery.objects.all()
         context["cities"] = city
+        context["galleries"] = gallery
         return context
 
 

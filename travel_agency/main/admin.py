@@ -1,6 +1,20 @@
 from django.contrib import admin
 
-from .models import Contact, City
+from .models import Contact, City, Gallery
 
-admin.site.register(Contact)
-admin.site.register(City)
+@admin.register(Contact)
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ("full_name", "phone")
+    search_fields = ("full_name", "message")
+
+
+@admin.register(City)
+class CityAdmin(admin.ModelAdmin):
+    list_display = ("name",)
+    search_fields = ("name",)
+
+
+@admin.register(Gallery)
+class GalleryAdmin(admin.ModelAdmin):
+    list_display = ("title",)
+    search_fields = ("title",)

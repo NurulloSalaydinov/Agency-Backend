@@ -50,6 +50,14 @@ function scrollTrigger() {
     })
 }
 
+function openModal() {
+    document.querySelector('.modal').classList.add('is-active');
+}
+
+function closeModal() {
+    document.querySelector('.modal').classList.remove('is-active');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // Get all "navbar-burger" elements
@@ -71,5 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
 
 scrollTrigger();

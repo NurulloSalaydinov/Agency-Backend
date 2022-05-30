@@ -22,23 +22,23 @@ msgstr ""
 
 #: .\templates\index.html:9
 msgid "Travel Agency Uz"
-msgstr ""
+msgstr "Туристическое Агентство Уз"
 
 #: .\templates\index.html:38
 msgid "Shaharlar"
-msgstr ""
+msgstr "Города"
 
 #: .\templates\index.html:39
 msgid "Galereya"
-msgstr ""
+msgstr "Галерея"
 
 #: .\templates\index.html:40
 msgid "Ma'lumotlar"
-msgstr ""
+msgstr "Информация"
 
 #: .\templates\index.html:68
 msgid "O'zbek me'morchiligi"
-msgstr ""
+msgstr "узбекская архитектура"
 
 #: .\templates\index.html:70
 msgid ""

@@ -20,23 +20,23 @@ msgstr ""
 
 #: .\templates\index.html:9
 msgid "Travel Agency Uz"
-msgstr ""
+msgstr "Seyahat Acentası Uz"
 
 #: .\templates\index.html:38
 msgid "Shaharlar"
-msgstr ""
+msgstr "Şehirler"
 
 #: .\templates\index.html:39
 msgid "Galereya"
-msgstr ""
+msgstr "Galeri"
 
 #: .\templates\index.html:40
 msgid "Ma'lumotlar"
-msgstr ""
+msgstr "Bilgi"
 
 #: .\templates\index.html:68
 msgid "O'zbek me'morchiligi"
-msgstr ""
+msgstr "Özbek mimarisi"
 
 #: .\templates\index.html:70
 msgid ""
