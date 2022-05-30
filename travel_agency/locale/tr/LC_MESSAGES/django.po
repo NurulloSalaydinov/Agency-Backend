@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-30 11:35+0300\n"
+"POT-Creation-Date: 2022-05-30 18:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,54 +20,64 @@ msgstr ""
 
 #: .\templates\index.html:9
 msgid "Travel Agency Uz"
-msgstr "Turkish"
+msgstr ""
 
 #: .\templates\index.html:38
 msgid "Shaharlar"
-msgstr "Turkish"
+msgstr ""
 
 #: .\templates\index.html:39
 msgid "Galereya"
-msgstr "Turkish"
+msgstr ""
 
 #: .\templates\index.html:40
 msgid "Ma'lumotlar"
-msgstr "Turkish"
+msgstr ""
 
 #: .\templates\index.html:68
 msgid "O'zbek me'morchiligi"
 msgstr ""
 
+#: .\templates\index.html:70
+msgid ""
+"Me’morchilik ijodining gullab-yashnashi O‘zbekiston Buyuk Ipak yo‘lining "
+"markazi bo‘lgan o‘rta asrlar davriga to‘g‘ri keladi. XIV asrdan boshlab bu "
+"yerda dunyoga mashhur me’morchilik yodgorliklari – Samarqanddagi Registon "
+"maydoni, Shohi-Zinda majmuasi, Bibixonim masjidi va Gur-Amir maqbarasi, "
+"Shahrisabzdagi Oqsaroy, Buxorodagi Poyi kalon va Labi Hovuz, Xivada minora "
+"va madrasalar barpo etildi"
+msgstr ""
+
 #: .\templates\index.html:74
-msgid "O'zbek madaniy merosi"
+msgid "Ozbek madaniy merosi"
 msgstr ""
 
 #: .\templates\index.html:76
 msgid ""
-"O‘zbekiston madaniyati, Markaziy Osiyo xalqlarining ko‘p asrlik an’analari "
-"va turmush tarzi bilan chambarchas bog‘liq boy tarixga ega"
+"Ozbekiston madaniyati, Markaziy Osiyo xalqlarining kop asrlik ananalari va "
+"turmush tarzi bilan chambarchas bogliq boy tarixga ega"
 msgstr ""
 
 #: .\templates\index.html:80
-msgid "Xalq san'ati"
+msgid "Xalq sanati"
 msgstr ""
 
 #: .\templates\index.html:82
 msgid ""
-"O‘zbekistonda azaldan noyob iste’dodli odamlar yashab, xalq san’atining  "
-"nodir an’analarini asrab-avaylab, avloddan-avlodga yetkazib kelmoqdalar. "
-"Ushbu an’analar bizning tariximizni, ajoyib madaniyatimiz va milliy "
-"qadriyatlarimizni unutishga yo‘l bermaydi."
+"Ozbekistonda azaldan noyob istedodli odamlar yashab, xalq sanatining  nodir "
+"ananalarini asrab-avaylab, avloddan-avlodga yetkazib kelmoqdalar. Ushbu "
+"ananalar bizning tariximizni, ajoyib madaniyatimiz va milliy "
+"qadriyatlarimizni unutishga yol bermaydi."
 msgstr ""
 
 #: .\templates\index.html:92
-msgid "O‘zbekistonni o‘zingiz uchun kashf eting! "
+msgid "Ozbekistonni ozingiz uchun kashf eting!"
 msgstr ""
 
 #: .\templates\index.html:93
 msgid ""
-"O‘zbekiston Sharqning sirli mamlakatidir. U yerda tarixlar afsonalarda "
-"to‘plangan, quyosh yil bo‘yi porlab, tabiatning betakrorligi va odamlarning "
+"Ozbekiston Sharqning sirli mamlakatidir. U yerda tarixlar afsonalarda "
+"toplangan, quyosh yil boyi porlab, tabiatning betakrorligi va odamlarning "
 "yuraklari tozaligi buning nishonasidir"
 msgstr ""
 
@@ -82,11 +92,11 @@ msgid "Batafsil"
 msgstr ""
 
 #: .\templates\index.html:104
-msgid "O'zbekiston shaharlari"
+msgid "Ozbekiston shaharlari"
 msgstr ""
 
 #: .\templates\index.html:105
-msgid "Sayyohlar uchun mashhur yo'nalish"
+msgid "Sayyohlar uchun mashhur yonalish"
 msgstr ""
 
 #: .\templates\index.html:171
@@ -102,6 +112,7 @@ msgid "Video galareya"
 msgstr ""
 
 #: .\templates\index.html:201 .\templates\index.html:266
+#: .\templates\index.html:285
 msgid "Biz bilan sayohat qiling"
 msgstr ""
 
@@ -117,22 +128,8 @@ msgstr ""
 msgid "Transport hizmati"
 msgstr ""
 
-#: .\templates\index.html:230
-msgid ""
-"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis "
-"hic totam ducimus numquam eaque, vitae eius dolores praesentium expedita "
-"repudiandae."
-msgstr ""
-
 #: .\templates\index.html:241
 msgid "5 yulduzli mehmonxona"
-msgstr ""
-
-#: .\templates\index.html:242 .\templates\index.html:254
-msgid ""
-"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis "
-"hic totam ducimus numquam eaque, vitae eius dolores praesentium expedita "
-"repudiandae"
 msgstr ""
 
 #: .\templates\index.html:253
@@ -145,6 +142,58 @@ msgstr ""
 
 #: .\templates\index.html:269
 msgid "Bizning Offis"
+msgstr ""
+
+#: .\templates\index.html:284
+msgid "Savol va takliflar uchun"
+msgstr ""
+
+#: .\templates\index.html:296
+msgid "Ism Familiya"
+msgstr ""
+
+#: .\templates\index.html:305
+msgid "Telefon raqam"
+msgstr ""
+
+#: .\templates\index.html:314
+msgid "Email"
+msgstr ""
+
+#: .\templates\index.html:327
+msgid "Savol va Takliflar uchun"
+msgstr ""
+
+#: .\templates\index.html:337
+msgid "Yuborish"
+msgstr ""
+
+#: .\templates\index.html:356
+msgid "Sayyohlar uchun"
+msgstr ""
+
+#: .\templates\index.html:357
+msgid "Ichki Turizm"
+msgstr ""
+
+#: .\templates\index.html:358
+msgid "Tur opertorlarining reyestri"
+msgstr ""
+
+#: .\templates\index.html:359
+msgid "Online sorovnoma"
+msgstr ""
+
+#: .\templates\index.html:360
+msgid "Ozbekiston xaritasi"
+msgstr ""
+
+#: .\templates\index.html:363
+msgid "Biz bilan aloqa"
+msgstr ""
+
+#: .\templates\index.html:367
+msgid "Andijon, Xojaobod, Yangi hayot MFY, 75-uy"
 msgstr ""
 
 #: .\travel_agency\settings.py:122

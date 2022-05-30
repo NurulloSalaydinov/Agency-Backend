@@ -67,19 +67,19 @@
             <div class="text-content">
                 <h1 class="home-title">{% trans "O'zbek me'morchiligi" %}</h1>
                 <p class="home-desc">
-                    {% trans "Me’morchilik ijodining gullab-yashnashi O‘zbekiston Buyuk Ipak yo‘lining markazi bo‘lgan o‘rta asrlar davriga to‘g‘ri keladi. XIV asrdan boshlab bu yerda dunyoga mashhur me’morchilik yodgorliklari – Samarqanddagi Registon maydoni, Shohi-Zinda majmuasi, Bibixonim masjidi va Gur-Amir maqbarasi, Shahrisabzdagi Oqsaroy, Buxorodagi Poyi kalon va Labi Hovuz, Xivada minora va madrasalar barpo etildi "}
+                    {% trans 'Me’morchilik ijodining gullab-yashnashi O‘zbekiston Buyuk Ipak yo‘lining markazi bo‘lgan o‘rta asrlar davriga to‘g‘ri keladi. XIV asrdan boshlab bu yerda dunyoga mashhur me’morchilik yodgorliklari – Samarqanddagi Registon maydoni, Shohi-Zinda majmuasi, Bibixonim masjidi va Gur-Amir maqbarasi, Shahrisabzdagi Oqsaroy, Buxorodagi Poyi kalon va Labi Hovuz, Xivada minora va madrasalar barpo etildi' %}
                 </p>
             </div>
             <div class="text-content" style="display: none;">
-                <h1 class="home-title">{% trans "O'zbek madaniy merosi" %}</h1>
+                <h1 class="home-title">{% trans 'Ozbek madaniy merosi' %}</h1>
                 <p class="home-desc">
-                    {% trans "O‘zbekiston madaniyati, Markaziy Osiyo xalqlarining ko‘p asrlik an’analari va turmush tarzi bilan chambarchas bog‘liq boy tarixga ega" %}
+                    {% trans 'Ozbekiston madaniyati, Markaziy Osiyo xalqlarining kop asrlik ananalari va turmush tarzi bilan chambarchas bogliq boy tarixga ega' %}
                 </p>
             </div>
             <div class="text-content" style="display: none;">
-                <h1 class="home-title">{% trans "Xalq san'ati" %}</h1>
+                <h1 class="home-title">{% trans 'Xalq sanati' %}</h1>
                 <p class="home-desc">
-                    {% trans "O‘zbekistonda azaldan noyob iste’dodli odamlar yashab, xalq san’atining  nodir an’analarini asrab-avaylab, avloddan-avlodga yetkazib kelmoqdalar. Ushbu an’analar bizning tariximizni, ajoyib madaniyatimiz va milliy qadriyatlarimizni unutishga yo‘l bermaydi." %}
+                    {% trans 'Ozbekistonda azaldan noyob istedodli odamlar yashab, xalq sanatining  nodir ananalarini asrab-avaylab, avloddan-avlodga yetkazib kelmoqdalar. Ushbu ananalar bizning tariximizni, ajoyib madaniyatimiz va milliy qadriyatlarimizni unutishga yol bermaydi.' %}
                 </p>
             </div>
         </div>
@@ -89,11 +89,11 @@
     <section class="py-4" id="start">
         <div class="container">
             <div class="py-6 has-text-centered has-text-dark">
-                <h1 class="pop-title">{% trans "O‘zbekistonni o‘zingiz uchun kashf eting! "%}</h1>
-                <h3 class="pop-subtitle">{% trans "O‘zbekiston Sharqning sirli mamlakatidir. U yerda tarixlar afsonalarda to‘plangan, quyosh yil bo‘yi porlab, tabiatning betakrorligi va odamlarning yuraklari tozaligi buning nishonasidir" %}</h3>
-                <h4 class="pop-subtitle has-text-grey">{% trans "Ushbu muborak zaminga kelgan har bir mehmon xursandchilik bilan kutib olinadi va bir marta tashrif buyurgan kishi yana qaytib kelishni xohlaydi." %}</h4>
+                <h1 class="pop-title">{% trans 'Ozbekistonni ozingiz uchun kashf eting!' %}</h1>
+                <h3 class="pop-subtitle">{% trans 'Ozbekiston Sharqning sirli mamlakatidir. U yerda tarixlar afsonalarda toplangan, quyosh yil boyi porlab, tabiatning betakrorligi va odamlarning yuraklari tozaligi buning nishonasidir' %}</h3>
+                <h4 class="pop-subtitle has-text-grey">{% trans 'Ushbu muborak zaminga kelgan har bir mehmon xursandchilik bilan kutib olinadi va bir marta tashrif buyurgan kishi yana qaytib kelishni xohlaydi.' %}</h4>
                 <br>
-                <button class="button is-primary py-3 px-6">{% trans "Batafsil" %}</button>
+                <button class="button is-primary py-3 px-6">{% trans 'Batafsil' %}</button>
             </div>
         </div>
     </section>
@@ -101,65 +101,21 @@
     <!-- section city -->
     <section class="py-4" id="city">
         <div class="container has-text-centered">
-            <h3 class="pop-subtitle is-size-3 has-text-dark">{% trans "O'zbekiston shaharlari" %}</h3>
-            <h3 class="pop-subtitle is-size-5">{% trans "Sayyohlar uchun mashhur yo'nalish" %}</h3>
+            <h3 class="pop-subtitle is-size-3 has-text-dark">{% trans 'Ozbekiston shaharlari' %}</h3>
+            <h3 class="pop-subtitle is-size-5">{% trans 'Sayyohlar uchun mashhur yonalish' %}</h3>
             <div class="flex py-3">
 
+                {% for city in cities %}
+                
                 <div class="block">
+
                     <div class="watermark">
-                        <div class="bg-dark" data-target="Samarqand"></div>
+                        <div class="bg-dark" data-target="{{ city.name }}"></div>
                     </div>
-                    <img src="/static/assets/img/Samarqand.jpg" alt="" />
+                    <img src="{{ city.image.url }}" alt="" />
                 </div>
 
-                <div class="block">
-                    <div class="watermark">
-                        <div class="bg-dark" data-target="Andijan"></div>
-                    </div>
-                    <img src="/static/assets/img/andijon.jpg" alt="" />
-                </div>
-
-                <div class="block">
-                    <div class="watermark">
-                        <div class="bg-dark" data-target="Termiz"></div>
-                    </div>
-                    <img src="/static/assets/img/Termiz.jpg" alt="" />
-                </div>
-
-                <div class="block">
-                    <div class="watermark">
-                        <div class="bg-dark" data-target="Xiva"></div>
-                    </div>
-                    <img src="/static/assets/img/Xiva.jpg" alt="" />
-                </div>
-
-                <div class="block">
-                    <div class="watermark">
-                        <div class="bg-dark" data-target="Tashkent"></div>
-                    </div>
-                    <img src="/static/assets/img/tashkent.jpg" alt="" />
-                </div>
-
-                <div class="block">
-                    <div class="watermark">
-                        <div class="bg-dark" data-target="Mo'ynoq"></div>
-                    </div>
-                    <img src="/static/assets/img/Mo'ynoq.jpg" alt="" />
-                </div>
-
-                <div class="block">
-                    <div class="watermark">
-                        <div class="bg-dark" data-target="Zomin"></div>
-                    </div>
-                    <img src="/static/assets/img/zomin.jpg" alt="" />
-                </div>
-
-                <div class="block">
-                    <div class="watermark">
-                        <div class="bg-dark" data-target="Buxoro"></div>
-                    </div>
-                    <img src="/static/assets/img/download.jpg" alt="" />
-                </div>
+                {% endfor %}
 
             </div>
         </div>
@@ -168,8 +124,8 @@
     <!-- section photo -->
     <section class="py-4" id="photo">
         <div class="container has-text-centered">
-            <h3 class="pop-subtitle is-size-3 has-text-dark">{% trans "Fotogalareya" %}</h3>
-            <h3 class="pop-subtitle is-size-5">{% trans "Sayyohlar uchun mashhur joylar" %}</h3>
+            <h3 class="pop-subtitle is-size-3 has-text-dark">{% trans 'Fotogalareya' %}</h3>
+            <h3 class="pop-subtitle is-size-5">{% trans 'Sayyohlar uchun mashhur joylar' %}</h3>
 
             <div class="flex py-6">
                 <div class="image-content">
@@ -197,8 +153,8 @@
     <!-- section video -->
     <section class="py-4" id="video">
         <div class="container has-text-centered py-3">
-            <h3 class="pop-subtitle is-size-3 has-text-dark">{% trans "Video galareya" %}</h3>
-            <h3 class="pop-subtitle is-size-5">{% trans "Biz bilan sayohat qiling" %}</h3>
+            <h3 class="pop-subtitle is-size-3 has-text-dark">{% trans 'Video galareya' %}</h3>
+            <h3 class="pop-subtitle is-size-5">{% trans 'Biz bilan sayohat qiling' %}</h3>
             <br>
             <div class="iframes">
                 <iframe src="https://www.youtube.com/embed/xlKxZweINyE" title="YouTube video player" frameborder="0"
@@ -217,8 +173,8 @@
     <!-- section why_choose_us -->
     <section class="py-4" id="why_choose_us">
         <div class="container has-text-centered py-3">
-            <h1 class="pop-subtitle is-size-3 has-text-dark">{% trans "Bizning afzaliglarimiz" %}</h1>
-            <h3 class="pop-subtitle is-size-5">{% trans "Bizning sayyohlar uchun maxsus" %}</h3>
+            <h1 class="pop-subtitle is-size-3 has-text-dark">{% trans 'Bizning afzaliglarimiz' %}</h1>
+            <h3 class="pop-subtitle is-size-5">{% trans 'Bizning sayyohlar uchun maxsus' %}</h3>
             <div class="columns py-4">
                 <div class="column is-4">
                     <div class="card pt-5">
@@ -226,8 +182,8 @@
                             src="/static/assets/img/plane.png" alt="" />
                         <div class="card-content">
                             <hr>
-                            <h1 class="pop-title mb-1 is-size-4">{% trans "Transport hizmati" %}</h1>
-                            <h3 class="pop-smalltitle">{% trans "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium expedita repudiandae." %}</h3>
+                            <h1 class="pop-title mb-1 is-size-4">{% trans 'Transport hizmati' %}</h1>
+                            <h3 class="pop-smalltitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium expedita repudiandae.</h3>
                         </div>
                     </div>
                 </div>
@@ -238,8 +194,8 @@
                             src="/static/assets/img/star.png" alt="" />
                         <div class="card-content">
                             <hr>
-                            <h1 class="pop-title mb-1 is-size-4">{% trans "5 yulduzli mehmonxona" %}</h1>
-                            <h3 class="pop-smalltitle">{% trans "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium expedita repudiandae" %}</h3>
+                            <h1 class="pop-title mb-1 is-size-4">{% trans '5 yulduzli mehmonxona' %}</h1>
+                            <h3 class="pop-smalltitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium expedita repudiandae.</h3>
                         </div>
                     </div>
                 </div>
@@ -250,8 +206,8 @@
                             src="/static/assets/img/safe.png" alt="" />
                         <div class="card-content">
                             <hr>
-                            <h1 class="pop-title mb-1 is-size-4">{% trans "Havfsizlik" %}</h1>
-                            <h3 class="pop-smalltitle">{% trans "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium expedita repudiandae" %}</h3>
+                            <h1 class="pop-title mb-1 is-size-4">{% trans 'Havfsizlik' %}</h1>
+                            <h3 class="pop-smalltitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium expedita repudiandae.</h3>
                         </div>
                     </div>
                 </div>
@@ -262,13 +218,13 @@
     <!-- section about us -->
     <section class="py-4" id="aboutus">
         <div class="container has-text-centered py-3">
-            <h3 class="pop-subtitle is-size-3 has-text-dark">{% trans "Biz haqimizda" %}</h3>
-            <h3 class="pop-subtitle is-size-5">{% trans "Biz bilan sayohat qiling" %}</h3>
+            <h3 class="pop-subtitle is-size-3 has-text-dark">{% trans 'Biz haqimizda' %}</h3>
+            <h3 class="pop-subtitle is-size-5">{% trans 'Biz bilan sayohat qiling' %}</h3>
             <div class="columns mt-5 box">
                 <div class="column is-6 centered-mutually">
-                    <h3 class="pop-title is-size-5 has-text-dark">{% trans "Bizning Offis" %}</h3>
+                    <h3 class="pop-title is-size-5 has-text-dark">{% trans 'Bizning Offis' %}</h3>
                     <p>
-                        {% trans "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ipsam non iste ducimus delectus incidunt illum voluptates, consequatur, similique molestias repudiandae ex doloremque consequuntur facilis praesentium sequi laboriosam? Numquam neque rem sed itaque. Fugit ut in, recusandae molestias ea tempore impedit magnam magni cum, nihil commodi illum modi omnis animi!" %}
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ipsam non iste ducimus delectus incidunt illum voluptates, consequatur, similique molestias repudiandae ex doloremque consequuntur facilis praesentium sequi laboriosam? Numquam neque rem sed itaque. Fugit ut in, recusandae molestias ea tempore impedit magnam magni cum, nihil commodi illum modi omnis animi!
                     </p>
                 </div>
                 <div class="column is-6 centered-mutually">
@@ -281,8 +237,8 @@
     <!-- section contact -->
     <section class="py-4" id="contact">
         <div class="container has-text-centered">
-            <h1 class="pop-subtitle is-size-3 has-text-dark">{% trans "Savol va takliflar uchun" %}</h1>
-            <h3 class="pop-subtitle is-size-5">{% trans "Biz bilan sayohat qiling" %}</h3>
+            <h1 class="pop-subtitle is-size-3 has-text-dark">{% trans 'Savol va takliflar uchun' %}</h1>
+            <h3 class="pop-subtitle is-size-5">{% trans 'Biz bilan sayohat qiling' %}</h3>
             <form method="post">
 
                 {% csrf_token %}
@@ -356,15 +312,15 @@
                         <h1 class="pop-title has-text-light">{% trans 'Sayyohlar uchun' %}</h1>
                         <h3 class="pop-subtitle has-text-grey">{% trans 'Ichki Turizm' %}</h3>
                         <h3 class="pop-subtitle has-text-grey">{% trans 'Tur opertorlarining reyestri' %}</h3>
-                        <h3 class="pop-subtitle has-text-grey">{% trans 'Online so'rovnoma' %}</h3>
-                        <h3 class="pop-subtitle has-text-grey">{% trans "O'zbekiston xaritasi" %}</h3>
+                        <h3 class="pop-subtitle has-text-grey">{% trans 'Online sorovnoma' %}</h3>
+                        <h3 class="pop-subtitle has-text-grey">{% trans 'Ozbekiston xaritasi' %}</h3>
                     </div>
                     <div class="column">
                         <h1 class="pop-title has-text-light">{% trans 'Biz bilan aloqa' %}</h1>
                         <a href="tel:+998971619717" class="pop-subtitle has-text-grey">+998971619717</a>
                         <h3 class="pop-subtitle has-text-grey">
                             <svg style="width: 20px;height: 20px;fill: grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>
-                            {% trans "Andijon, Xo'jaobod, Yangi hayot MFY, 75-uy" %}
+                            {% trans 'Andijon, Xojaobod, Yangi hayot MFY, 75-uy' %}
                         </h3>
 
                         <div class="social-sites">
