@@ -1,3 +1,4 @@
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,13 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Agency Uz</title>
+    <title>{% trans 'Travel Agency Uz' %}</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="/static/assets/img/logo.png" type="image/x-icon">
     <!-- bulma css -->
     <link rel="stylesheet" href="/static/assets/css/bulma.min.css">
-    <!-- font awesome -->
-    <!-- <link rel="stylesheet" href="/static/assets/fonts/font/font.css"> -->
     <!-- custom css -->
     <link rel="stylesheet" href="/static/assets/css/style.css">
 </head>
@@ -36,17 +35,25 @@
         <div id="navbarBasicExample" class="navbar-menu">
 
             <div class="navbar-end">
-                <a href="#city" class="navbar-item">Shaharlar</a>
-                <a href="#photo" class="navbar-item">Galereya</a>
-                <a href="#why_choose_us" class="navbar-item">Ma'lumotlar</a>
+                <a href="#city" class="navbar-item">{% trans 'Shaharlar' %}</a>
+                <a href="#photo" class="navbar-item">{% trans 'Galereya' %}</a>
+                <a href="#why_choose_us" class="navbar-item">{% trans "Ma'lumotlar" %}</a>
                 <a href="#" class="navbar-item control">
-                    <div class="select">
-                        <select>
-                            <option value="uz">Uz</option>
-                            <option value="en">En</option>
-                            <option value="ru">Ru</option>
-                        </select>
-                    </div>
+                    <form action="{% url 'main:set_language' %}" method="post">
+                        {% csrf_token %}
+                        <div class="select">
+                            <select name="language" onchange="this.parentElement.parentElement.submit()">
+                                {% get_current_language as LANGUAGE_CODE %}
+                                {% get_available_languages as LANGUAGES %}
+                                {% get_language_info_list for LANGUAGES as languages %}
+                                {% for language in languages %}
+                                    <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}>
+                                        {{ language.name_local }} ({{ language.code }})
+                                    </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </form>
                 </a>
             </div>
 
@@ -57,10 +64,24 @@
     <!-- section home -->
     <section class="py-4" id="home">
         <div class="container">
-            <h1 class="home-title" data-title="O'zbek me'morchiligi"></h1>
-            <p class="home-desc"
-                data-title="Me’morchilik ijodining gullab-yashnashi O‘zbekiston Buyuk Ipak yo‘lining markazi bo‘lgan o‘rta asrlar davriga to‘g‘ri keladi. XIV asrdan boshlab bu yerda dunyoga mashhur me’morchilik yodgorliklari – Samarqanddagi Registon maydoni, Shohi-Zinda majmuasi, Bibixonim masjidi va Gur-Amir maqbarasi, Shahrisabzdagi Oqsaroy, Buxorodagi Poyi kalon va Labi Hovuz, Xivada minora va madrasalar barpo etildi.">
-            </p>
+            <div class="text-content">
+                <h1 class="home-title">{% trans "O'zbek me'morchiligi" %}</h1>
+                <p class="home-desc">
+                    {% trans "Me’morchilik ijodining gullab-yashnashi O‘zbekiston Buyuk Ipak yo‘lining markazi bo‘lgan o‘rta asrlar davriga to‘g‘ri keladi. XIV asrdan boshlab bu yerda dunyoga mashhur me’morchilik yodgorliklari – Samarqanddagi Registon maydoni, Shohi-Zinda majmuasi, Bibixonim masjidi va Gur-Amir maqbarasi, Shahrisabzdagi Oqsaroy, Buxorodagi Poyi kalon va Labi Hovuz, Xivada minora va madrasalar barpo etildi "}
+                </p>
+            </div>
+            <div class="text-content" style="display: none;">
+                <h1 class="home-title">{% trans "O'zbek madaniy merosi" %}</h1>
+                <p class="home-desc">
+                    {% trans "O‘zbekiston madaniyati, Markaziy Osiyo xalqlarining ko‘p asrlik an’analari va turmush tarzi bilan chambarchas bog‘liq boy tarixga ega" %}
+                </p>
+            </div>
+            <div class="text-content" style="display: none;">
+                <h1 class="home-title">{% trans "Xalq san'ati" %}</h1>
+                <p class="home-desc">
+                    {% trans "O‘zbekistonda azaldan noyob iste’dodli odamlar yashab, xalq san’atining  nodir an’analarini asrab-avaylab, avloddan-avlodga yetkazib kelmoqdalar. Ushbu an’analar bizning tariximizni, ajoyib madaniyatimiz va milliy qadriyatlarimizni unutishga yo‘l bermaydi." %}
+                </p>
+            </div>
         </div>
     </section>
     <!-- end section home -->
@@ -68,14 +89,11 @@
     <section class="py-4" id="start">
         <div class="container">
             <div class="py-6 has-text-centered has-text-dark">
-                <h1 class="pop-title">O‘zbekistonni o‘zingiz uchun kashf eting!</h1>
-                <h3 class="pop-subtitle">O‘zbekiston Sharqning sirli mamlakatidir. U yerda tarixlar afsonalarda
-                    to‘plangan, quyosh yil bo‘yi porlab, tabiatning betakrorligi va odamlarning yuraklari tozaligi
-                    buning nishonasidir</h3>
-                <h4 class="pop-subtitle has-text-grey">Ushbu muborak zaminga kelgan har bir mehmon xursandchilik bilan
-                    kutib olinadi va bir marta tashrif buyurgan kishi yana qaytib kelishni xohlaydi.</h4>
+                <h1 class="pop-title">{% trans "O‘zbekistonni o‘zingiz uchun kashf eting! "%}</h1>
+                <h3 class="pop-subtitle">{% trans "O‘zbekiston Sharqning sirli mamlakatidir. U yerda tarixlar afsonalarda to‘plangan, quyosh yil bo‘yi porlab, tabiatning betakrorligi va odamlarning yuraklari tozaligi buning nishonasidir" %}</h3>
+                <h4 class="pop-subtitle has-text-grey">{% trans "Ushbu muborak zaminga kelgan har bir mehmon xursandchilik bilan kutib olinadi va bir marta tashrif buyurgan kishi yana qaytib kelishni xohlaydi." %}</h4>
                 <br>
-                <button class="button is-primary py-3 px-6">Batafsil</button>
+                <button class="button is-primary py-3 px-6">{% trans "Batafsil" %}</button>
             </div>
         </div>
     </section>
@@ -83,8 +101,8 @@
     <!-- section city -->
     <section class="py-4" id="city">
         <div class="container has-text-centered">
-            <h3 class="pop-subtitle is-size-3 has-text-dark">O'zbekiston shaharlari</h3>
-            <h3 class="pop-subtitle is-size-5">Sayyohlar uchun mashhur yo'nalish</h3>
+            <h3 class="pop-subtitle is-size-3 has-text-dark">{% trans "O'zbekiston shaharlari" %}</h3>
+            <h3 class="pop-subtitle is-size-5">{% trans "Sayyohlar uchun mashhur yo'nalish" %}</h3>
             <div class="flex py-3">
 
                 <div class="block">
@@ -150,8 +168,8 @@
     <!-- section photo -->
     <section class="py-4" id="photo">
         <div class="container has-text-centered">
-            <h3 class="pop-subtitle is-size-3 has-text-dark">Fotogalareya</h3>
-            <h3 class="pop-subtitle is-size-5">Sayyohlar uchun mashhur joylar</h3>
+            <h3 class="pop-subtitle is-size-3 has-text-dark">{% trans "Fotogalareya" %}</h3>
+            <h3 class="pop-subtitle is-size-5">{% trans "Sayyohlar uchun mashhur joylar" %}</h3>
 
             <div class="flex py-6">
                 <div class="image-content">
@@ -179,8 +197,8 @@
     <!-- section video -->
     <section class="py-4" id="video">
         <div class="container has-text-centered py-3">
-            <h3 class="pop-subtitle is-size-3 has-text-dark">Video galareya</h3>
-            <h3 class="pop-subtitle is-size-5">Biz bilan sayohat qiling</h3>
+            <h3 class="pop-subtitle is-size-3 has-text-dark">{% trans "Video galareya" %}</h3>
+            <h3 class="pop-subtitle is-size-5">{% trans "Biz bilan sayohat qiling" %}</h3>
             <br>
             <div class="iframes">
                 <iframe src="https://www.youtube.com/embed/xlKxZweINyE" title="YouTube video player" frameborder="0"
@@ -199,8 +217,8 @@
     <!-- section why_choose_us -->
     <section class="py-4" id="why_choose_us">
         <div class="container has-text-centered py-3">
-            <h1 class="pop-subtitle is-size-3 has-text-dark">Bizning afzaliglarimiz</h1>
-            <h3 class="pop-subtitle is-size-5">Bizning sayyohlar uchun maxsus</h3>
+            <h1 class="pop-subtitle is-size-3 has-text-dark">{% trans "Bizning afzaliglarimiz" %}</h1>
+            <h3 class="pop-subtitle is-size-5">{% trans "Bizning sayyohlar uchun maxsus" %}</h3>
             <div class="columns py-4">
                 <div class="column is-4">
                     <div class="card pt-5">
@@ -208,10 +226,8 @@
                             src="/static/assets/img/plane.png" alt="" />
                         <div class="card-content">
                             <hr>
-                            <h1 class="pop-title mb-1 is-size-4">Transport hizmati</h1>
-                            <h3 class="pop-smalltitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium
-                                expedita repudiandae.</h3>
+                            <h1 class="pop-title mb-1 is-size-4">{% trans "Transport hizmati" %}</h1>
+                            <h3 class="pop-smalltitle">{% trans "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium expedita repudiandae." %}</h3>
                         </div>
                     </div>
                 </div>
@@ -222,10 +238,8 @@
                             src="/static/assets/img/star.png" alt="" />
                         <div class="card-content">
                             <hr>
-                            <h1 class="pop-title mb-1 is-size-4">5 yulduzli mehmonxona</h1>
-                            <h3 class="pop-smalltitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium
-                                expedita repudiandae</h3>
+                            <h1 class="pop-title mb-1 is-size-4">{% trans "5 yulduzli mehmonxona" %}</h1>
+                            <h3 class="pop-smalltitle">{% trans "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium expedita repudiandae" %}</h3>
                         </div>
                     </div>
                 </div>
@@ -236,10 +250,8 @@
                             src="/static/assets/img/safe.png" alt="" />
                         <div class="card-content">
                             <hr>
-                            <h1 class="pop-title mb-1 is-size-4">Havfsizlik</h1>
-                            <h3 class="pop-smalltitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium
-                                expedita repudiandae</h3>
+                            <h1 class="pop-title mb-1 is-size-4">{% trans "Havfsizlik" %}</h1>
+                            <h3 class="pop-smalltitle">{% trans "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium expedita repudiandae" %}</h3>
                         </div>
                     </div>
                 </div>
@@ -250,16 +262,13 @@
     <!-- section about us -->
     <section class="py-4" id="aboutus">
         <div class="container has-text-centered py-3">
-            <h3 class="pop-subtitle is-size-3 has-text-dark">Biz haqimizda</h3>
-            <h3 class="pop-subtitle is-size-5">Biz bilan sayohat qiling</h3>
+            <h3 class="pop-subtitle is-size-3 has-text-dark">{% trans "Biz haqimizda" %}</h3>
+            <h3 class="pop-subtitle is-size-5">{% trans "Biz bilan sayohat qiling" %}</h3>
             <div class="columns mt-5 box">
                 <div class="column is-6 centered-mutually">
-                    <h3 class="pop-title is-size-5 has-text-dark">Bizning Offis</h3>
+                    <h3 class="pop-title is-size-5 has-text-dark">{% trans "Bizning Offis" %}</h3>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ipsam non iste ducimus
-                        delectus incidunt illum voluptates, consequatur, similique molestias repudiandae ex doloremque
-                        consequuntur facilis praesentium sequi laboriosam? Numquam neque rem sed itaque. Fugit ut in,
-                        recusandae molestias ea tempore impedit magnam magni cum, nihil commodi illum modi omnis animi!
+                        {% trans "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ipsam non iste ducimus delectus incidunt illum voluptates, consequatur, similique molestias repudiandae ex doloremque consequuntur facilis praesentium sequi laboriosam? Numquam neque rem sed itaque. Fugit ut in, recusandae molestias ea tempore impedit magnam magni cum, nihil commodi illum modi omnis animi!" %}
                     </p>
                 </div>
                 <div class="column is-6 centered-mutually">
@@ -272,63 +281,69 @@
     <!-- section contact -->
     <section class="py-4" id="contact">
         <div class="container has-text-centered">
-            <h1 class="pop-subtitle is-size-3 has-text-dark">Savol va takliflar uchun</h1>
-            <h3 class="pop-subtitle is-size-5">Biz bilan sayohat qiling</h3>
+            <h1 class="pop-subtitle is-size-3 has-text-dark">{% trans "Savol va takliflar uchun" %}</h1>
+            <h3 class="pop-subtitle is-size-5">{% trans "Biz bilan sayohat qiling" %}</h3>
+            <form method="post">
 
-            <div class="columns box mt-5 is-flex is-flex-wrap-wrap">
+                {% csrf_token %}
 
-                <div class="column is-6">
-
-                    <div class="field">
-                        <div class="control has-icons-left">
-                            <input class="input" type="text" placeholder="Ism Familiya">
-                            <span class="icon is-small is-left">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>
-                            </span>
+                <div class="columns box mt-5 is-flex is-flex-wrap-wrap">
+    
+                    <div class="column is-6">
+    
+                        <div class="field">
+                            <div class="control has-icons-left">
+                                <input name="full_name" max_length="255" class="input" type="text" placeholder="{% trans 'Ism Familiya' %}">
+                                <span class="icon is-small is-left">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="field">
-                        <div class="control has-icons-left">
-                            <input class="input" type="number" placeholder="Telefon raqam">
-                            <span class="icon is-small is-left">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"/></svg>
-                            </span>
+    
+                        <div class="field">
+                            <div class="control has-icons-left">
+                                <input name="phone" max_length="255" class="input" type="number" placeholder="{% trans 'Telefon raqam' %}">
+                                <span class="icon is-small is-left">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"/></svg>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="field">
-                        <div class="control has-icons-left">
-                            <input class="input" type="email" placeholder="Email">
-                            <span class="icon is-small is-left">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
-                            </span>
+    
+                        <div class="field">
+                            <div class="control has-icons-left">
+                                <input name="email" max_length="255" class="input" type="email" placeholder="{% trans 'Email' %}">
+                                <span class="icon is-small is-left">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
+                                </span>
+                            </div>
                         </div>
+    
                     </div>
-
-                </div>
-
-                <div class="column is-6">
-
-                    <div class="field">
-                        <div class="control">
-                            <textarea class="textarea" placeholder="Savol va Takliflar uchun" rows="5"></textarea>
+    
+                    <div class="column is-6">
+    
+                        <div class="field">
+                            <div class="control">
+                                <textarea name="message" class="textarea" placeholder="{% trans 'Savol va Takliflar uchun' %}" rows="5"></textarea>
+                            </div>
                         </div>
+    
                     </div>
-
-                </div>
-
-                <div class="column is-12">
+    
+                    <div class="column is-12">
+                        
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-primary">{% trans 'Yuborish' %}</button>
+                            </div>
+                        </div>
                     
-                    <div class="field">
-                        <div class="control">
-                            <button class="button is-primary">Yuborish</button>
-                        </div>
                     </div>
-                
+    
                 </div>
 
-            </div>
+            </form>
+
         </div>
     </section>
     <!-- end section contact -->
@@ -338,18 +353,18 @@
             <div class="container py-4">
                 <div class="columns is-flex is-flex-wrap-wrap">
                     <div class="column">
-                        <h1 class="pop-title has-text-light">Sayyohlar uchun</h1>
-                        <h3 class="pop-subtitle has-text-grey">Ichki Turizm</h3>
-                        <h3 class="pop-subtitle has-text-grey">Tur opertorlarining reyestri</h3>
-                        <h3 class="pop-subtitle has-text-grey">Online so'rovnoma</h3>
-                        <h3 class="pop-subtitle has-text-grey">O'zbekiston xaritasi</h3>
+                        <h1 class="pop-title has-text-light">{% trans 'Sayyohlar uchun' %}</h1>
+                        <h3 class="pop-subtitle has-text-grey">{% trans 'Ichki Turizm' %}</h3>
+                        <h3 class="pop-subtitle has-text-grey">{% trans 'Tur opertorlarining reyestri' %}</h3>
+                        <h3 class="pop-subtitle has-text-grey">{% trans 'Online so'rovnoma' %}</h3>
+                        <h3 class="pop-subtitle has-text-grey">{% trans "O'zbekiston xaritasi" %}</h3>
                     </div>
                     <div class="column">
-                        <h1 class="pop-title has-text-light">Biz bilan aloqa</h1>
+                        <h1 class="pop-title has-text-light">{% trans 'Biz bilan aloqa' %}</h1>
                         <a href="tel:+998971619717" class="pop-subtitle has-text-grey">+998971619717</a>
                         <h3 class="pop-subtitle has-text-grey">
                             <svg style="width: 20px;height: 20px;fill: grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>
-                            Andijon, Xo'jaobod, Yangi hayot MFY, 75-uy
+                            {% trans "Andijon, Xo'jaobod, Yangi hayot MFY, 75-uy" %}
                         </h3>
 
                         <div class="social-sites">
@@ -375,6 +390,7 @@
         </footer>
     </section>
     <!-- end footer -->
+    <!-- custom js -->
     <script src="/static/assets/js/app.js"></script>
 </body>
 

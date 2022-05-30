@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-30 11:35+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\templates\index.html:9
+msgid "Travel Agency Uz"
+msgstr "Turkish"
+
+#: .\templates\index.html:38
+msgid "Shaharlar"
+msgstr "Turkish"
+
+#: .\templates\index.html:39
+msgid "Galereya"
+msgstr "Turkish"
+
+#: .\templates\index.html:40
+msgid "Ma'lumotlar"
+msgstr "Turkish"
+
+#: .\templates\index.html:68
+msgid "O'zbek me'morchiligi"
+msgstr ""
+
+#: .\templates\index.html:74
+msgid "O'zbek madaniy merosi"
+msgstr ""
+
+#: .\templates\index.html:76
+msgid ""
+"O‘zbekiston madaniyati, Markaziy Osiyo xalqlarining ko‘p asrlik an’analari "
+"va turmush tarzi bilan chambarchas bog‘liq boy tarixga ega"
+msgstr ""
+
+#: .\templates\index.html:80
+msgid "Xalq san'ati"
+msgstr ""
+
+#: .\templates\index.html:82
+msgid ""
+"O‘zbekistonda azaldan noyob iste’dodli odamlar yashab, xalq san’atining  "
+"nodir an’analarini asrab-avaylab, avloddan-avlodga yetkazib kelmoqdalar. "
+"Ushbu an’analar bizning tariximizni, ajoyib madaniyatimiz va milliy "
+"qadriyatlarimizni unutishga yo‘l bermaydi."
+msgstr ""
+
+#: .\templates\index.html:92
+msgid "O‘zbekistonni o‘zingiz uchun kashf eting! "
+msgstr ""
+
+#: .\templates\index.html:93
+msgid ""
+"O‘zbekiston Sharqning sirli mamlakatidir. U yerda tarixlar afsonalarda "
+"to‘plangan, quyosh yil bo‘yi porlab, tabiatning betakrorligi va odamlarning "
+"yuraklari tozaligi buning nishonasidir"
+msgstr ""
+
+#: .\templates\index.html:94
+msgid ""
+"Ushbu muborak zaminga kelgan har bir mehmon xursandchilik bilan kutib "
+"olinadi va bir marta tashrif buyurgan kishi yana qaytib kelishni xohlaydi."
+msgstr ""
+
+#: .\templates\index.html:96
+msgid "Batafsil"
+msgstr ""
+
+#: .\templates\index.html:104
+msgid "O'zbekiston shaharlari"
+msgstr ""
+
+#: .\templates\index.html:105
+msgid "Sayyohlar uchun mashhur yo'nalish"
+msgstr ""
+
+#: .\templates\index.html:171
+msgid "Fotogalareya"
+msgstr ""
+
+#: .\templates\index.html:172
+msgid "Sayyohlar uchun mashhur joylar"
+msgstr ""
+
+#: .\templates\index.html:200
+msgid "Video galareya"
+msgstr ""
+
+#: .\templates\index.html:201 .\templates\index.html:266
+msgid "Biz bilan sayohat qiling"
+msgstr ""
+
+#: .\templates\index.html:220
+msgid "Bizning afzaliglarimiz"
+msgstr ""
+
+#: .\templates\index.html:221
+msgid "Bizning sayyohlar uchun maxsus"
+msgstr ""
+
+#: .\templates\index.html:229
+msgid "Transport hizmati"
+msgstr ""
+
+#: .\templates\index.html:230
+msgid ""
+"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis "
+"hic totam ducimus numquam eaque, vitae eius dolores praesentium expedita "
+"repudiandae."
+msgstr ""
+
+#: .\templates\index.html:241
+msgid "5 yulduzli mehmonxona"
+msgstr ""
+
+#: .\templates\index.html:242 .\templates\index.html:254
+msgid ""
+"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis "
+"hic totam ducimus numquam eaque, vitae eius dolores praesentium expedita "
+"repudiandae"
+msgstr ""
+
+#: .\templates\index.html:253
+msgid "Havfsizlik"
+msgstr ""
+
+#: .\templates\index.html:265
+msgid "Biz haqimizda"
+msgstr ""
+
+#: .\templates\index.html:269
+msgid "Bizning Offis"
+msgstr ""
+
+#: .\travel_agency\settings.py:122
+msgid "English"
+msgstr ""
+
+#: .\travel_agency\settings.py:123
+msgid "Russian"
+msgstr ""
+
+#: .\travel_agency\settings.py:124
+msgid "Uzbek"
+msgstr ""
+
+#: .\travel_agency\settings.py:125
+msgid "Turkish"
+msgstr ""

@@ -2,10 +2,6 @@
 
 let home = document.getElementById('home');
 
-let title = home.querySelector('.home-title');
-
-let subtitle = home.querySelector('.home-desc');
-
 let source_image = ['/static/assets/css/bg/0.jpg', '/static/assets/css/bg/2.jpg', '/static/assets/css/bg/3.jpg', '/static/assets/css/bg/4.jpg', '/static/assets/css/bg/5.jpg', '/static/assets/css/bg/6.jpg'];
 
 let _title = ["O'zbek madaniy merosi", "O'zbek me'morchiligi", "Xalq san'ati"];
@@ -17,15 +13,31 @@ let _subtitle = [
 
 setInterval(() => {
     let random_image = source_image[Math.floor(Math.random() * source_image.length)]
-    let random_title = _title[Math.floor(Math.random() * _title.length)]
-    let random_subtitle = _subtitle[Math.floor(Math.random() * _subtitle.length)]
     setTimeout(() => {
         home.style = `background-image: url(${random_image}) !important;`;
-        title.attributes['data-title'].nodeValue = random_title;
-        subtitle.attributes['data-title'].nodeValue = random_subtitle;
     }, 1000)
-}, 3000)
+}, 3000);
 
+// change text content
+
+let text = document.querySelectorAll('.text-content');
+
+let index = 0;
+
+setInterval(() => {
+    index++;
+    if (index == text.length) {
+        index = 0
+    };
+    changeTextContent(index)
+}, 4000)
+
+function changeTextContent(indexOfText) {
+    text.forEach(e => {
+        e.style.display = 'none';
+    })
+    text[indexOfText].style.display = 'block';
+}
 
 function scrollTrigger() {
     let navbar = document.querySelector('.navbar');
