@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-30 18:59+0300\n"
+"POT-Creation-Date: 2022-05-31 15:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,14 +33,14 @@ msgid "Galereya"
 msgstr "Галерея"
 
 #: .\templates\index.html:40
-msgid "Ma'lumotlar"
-msgstr "Информация"
+msgid "Contact"
+msgstr "Контакт"
 
-#: .\templates\index.html:68
+#: .\templates\index.html:69
 msgid "O'zbek me'morchiligi"
 msgstr "узбекская архитектура"
 
-#: .\templates\index.html:70
+#: .\templates\index.html:71
 msgid ""
 "Me’morchilik ijodining gullab-yashnashi O‘zbekiston Buyuk Ipak yo‘lining "
 "markazi bo‘lgan o‘rta asrlar davriga to‘g‘ri keladi. XIV asrdan boshlab bu "
@@ -49,171 +49,248 @@ msgid ""
 "Shahrisabzdagi Oqsaroy, Buxorodagi Poyi kalon va Labi Hovuz, Xivada minora "
 "va madrasalar barpo etildi"
 msgstr ""
-"«Архитектура расцветает на Великом шелковом пути Узбекистана»"
-"«Он восходит к средневековью, когда он был центром."
-"Всемирно известные архитектурные памятники на земле - Регистан в Самарканде"
-"«Площадь, комплекс Шахи-Зинда, мечеть Бибиханим и мавзолей Гур-Амир»,"
-"«Оксарой в Шахрисабзе, Пойи Калон и Лаби Ховуз в Бухаре, минарет в Хиве»"
-"и медресе построили"
+"«Архитектура расцветает на Великом шелковом пути Узбекистана»«Он восходит к "
+"средневековью, когда он был центром.Всемирно известные архитектурные "
+"памятники на земле - Регистан в Самарканде«Площадь, комплекс Шахи-Зинда, "
+"мечеть Бибиханим и мавзолей Гур-Амир»,«Оксарой в Шахрисабзе, Пойи Калон и "
+"Лаби Ховуз в Бухаре, минарет в Хиве»и медресе построили"
 
-#: .\templates\index.html:74
+#: .\templates\index.html:75
 msgid "Ozbek madaniy merosi"
 msgstr "Узбекское культурное наследие"
 
-#: .\templates\index.html:76
+#: .\templates\index.html:77
 msgid ""
-"Ozbekiston madaniyati, Markaziy Osiyo xalqlarining kop asrlik ananalari va "
-"turmush tarzi bilan chambarchas bogliq boy tarixga ega"
+"The culture of Uzbekistan has a rich history, which was inextricably linked "
+"by centuries-old traditions and lifestyle of the peoples of Central Asia"
 msgstr ""
-"«Культура Узбекистана, многовековые традиции народов Средней Азии и»"
-"имеет богатую историю, тесно связанную с образом жизни"
+"«Культура Узбекистана имеет богатую историю, которая была неразрывно связана»"
+"по многовековым традициям и образу жизни народов Средней Азии"
 
-#: .\templates\index.html:80
-msgid "Xalq sanati"
-msgstr "Народное искусство"
+#: .\templates\index.html:81
+msgid "Uzbek cuisine"
+msgstr "узбекская кухня"
 
-#: .\templates\index.html:82
+#: .\templates\index.html:83
 msgid ""
-"Ozbekistonda azaldan noyob istedodli odamlar yashab, xalq sanatining  nodir "
-"ananalarini asrab-avaylab, avloddan-avlodga yetkazib kelmoqdalar. Ushbu "
-"ananalar bizning tariximizni, ajoyib madaniyatimiz va milliy "
-"qadriyatlarimizni unutishga yol bermaydi."
+"Fragrant pilaf, delicious kazan-kabob, samsa, bread and hot shurpa - amaze "
+"the residents and guests of Uzbekistan with their color and incomparable "
+"taste."
 msgstr ""
-"«Узбекистан всегда был населен уникально талантливыми людьми, а народное творчество встречается редко»"
-"«Они хранят свои традиции и передают их из поколения в поколение."
-"ананасы - это наша история, наша замечательная культура и национальность"
-"«не позволяет нам забыть наши ценности»."
+"Ароматный плов, вкуснейший казан-кабоб, самса, хлеб и горячая шурпа - поражают"
+"жители и гости Узбекистана своим колоритом и несравненной"
+"вкус."
 
-#: .\templates\index.html:92
+#: .\templates\index.html:93
 msgid "Ozbekistonni ozingiz uchun kashf eting!"
 msgstr "Откройте для себя Узбекистан!"
 
-#: .\templates\index.html:93
+#: .\templates\index.html:95
 msgid ""
 "Ozbekiston Sharqning sirli mamlakatidir. U yerda tarixlar afsonalarda "
 "toplangan, quyosh yil boyi porlab, tabiatning betakrorligi va odamlarning "
 "yuraklari tozaligi buning nishonasidir"
 msgstr ""
-"«Узбекистан – загадочная страна Востока. Там история в легендах»"
-"собрано, солнце светит круглый год, уникальность природы и людей"
-"чистота сердца есть признак этого"
+"«Узбекистан – загадочная страна Востока. Там история в легендах»собрано, "
+"солнце светит круглый год, уникальность природы и людейчистота сердца есть "
+"признак этого"
 
-#: .\templates\index.html:94
+#: .\templates\index.html:98
 msgid ""
 "Ushbu muborak zaminga kelgan har bir mehmon xursandchilik bilan kutib "
 "olinadi va bir marta tashrif buyurgan kishi yana qaytib kelishni xohlaydi."
 msgstr ""
-"«Каждый гость, который приходит на эту благословенную землю, приветствуется»"
-"взято и человек, побывавший один раз, хочет вернуться снова."
+"«Каждый гость, который приходит на эту благословенную землю, "
+"приветствуется»взято и человек, побывавший один раз, хочет вернуться снова."
 
-#: .\templates\index.html:96
+#: .\templates\index.html:101
 msgid "Batafsil"
 msgstr "Читать далее"
 
-#: .\templates\index.html:104
+#: .\templates\index.html:109
 msgid "Ozbekiston shaharlari"
 msgstr "Города Узбекистана"
 
-#: .\templates\index.html:105
+#: .\templates\index.html:110
 msgid "Sayyohlar uchun mashhur yonalish"
 msgstr "Популярное место среди туристов"
 
-#: .\templates\index.html:171
+#: .\templates\index.html:133
 msgid "Fotogalareya"
 msgstr "Фотогалерея"
 
-#: .\templates\index.html:172
+#: .\templates\index.html:134
 msgid "Sayyohlar uchun mashhur joylar"
 msgstr "Популярные места для туристов"
 
-#: .\templates\index.html:200
+#: .\templates\index.html:149
 msgid "Video galareya"
 msgstr "Видео галерея"
 
-#: .\templates\index.html:201 .\templates\index.html:266
-#: .\templates\index.html:285
+#: .\templates\index.html:150 .\templates\index.html:244
+#: .\templates\index.html:266
 msgid "Biz bilan sayohat qiling"
 msgstr "Путешествуйте с нами"
 
-#: .\templates\index.html:220
+#: .\templates\index.html:169
 msgid "Bizning afzaliglarimiz"
 msgstr "Наши преимущества"
 
-#: .\templates\index.html:221
+#: .\templates\index.html:170
 msgid "Bizning sayyohlar uchun maxsus"
 msgstr "Специально для наших туристов"
 
-#: .\templates\index.html:229
+#: .\templates\index.html:178
 msgid "Transport hizmati"
 msgstr "Транспортные услуги"
 
-#: .\templates\index.html:241
+#: .\templates\index.html:180
+msgid ""
+"Ozbekiston havo yollari milliy aviakompaniyasi 1992-yil 28-yanvarda "
+"Ozbekiston Respublikasi hududida havo transporti siyosatini ishlab chiqish, "
+"muvofiqlashtirish va amalga oshirishni taminlovchi fuqaro aviatsiyasi davlat "
+"organi sifatida tashkil etilgan bolib, uning asosiy mezonlari xavfsizlik, "
+"ishonchlilik va qulaylikdir."
+msgstr ""
+"Национальная авиакомпания Узбекистана 28 января 1992 года"
+"«Разработка политики воздушного транспорта на территории Республики Узбекистан»,"
+"«Государство гражданской авиации, обеспечивающее координацию и реализацию»"
+"«Как созданный орган, его основными критериями являются безопасность»,"
+"«надежность и удобство»."
+
+#: .\templates\index.html:192
 msgid "5 yulduzli mehmonxona"
 msgstr "5-звездочный отель"
 
-#: .\templates\index.html:253
+#: .\templates\index.html:194
+msgid ""
+"Ozbekistondagi sayyohlik agentligi va turoperatori maxsus sayohatlarni "
+"tashkil qiladi. Mijozlarning xohishiga kora toliq moslashtirilgan "
+"sayohatlar. Siz sayohat dasturini, mehmonxonalarni, transportni, "
+"ovqatlanishni, ekskursiyalarni, gidlarni va hokazolarni tanlashingiz mumkin."
+msgstr ""
+"«Туристическое агентство и туроператор по Узбекистану предлагают специальные поездки»"
+"Организует. Полностью настраивается в соответствии с пожеланиями заказчика"
+"Путешествие. У вас есть программа путешествия, отели, транспорт,"
+"«Вы можете выбрать питание, экскурсии, гидов и так далее»."
+
+#: .\templates\index.html:206
 msgid "Havfsizlik"
 msgstr "Безопасность"
 
-#: .\templates\index.html:265
+#: .\templates\index.html:208
+msgid ""
+"Travel & Travels to Uzbekistan – <a href=\"/\">travel.uz</a> barcha "
+"turistlarni havfsizligini kafolatlaydi. Ushbu Maxfiylik siyosati hujjatida "
+"Travel & Travels to Uzbekistan – mahalliy Uzbektour sayyohlik operatori "
+"tomonidan toplangan va yozib olingan malumotlar turlari va ulardan qanday "
+"foydalanishimiz mavjud."
+msgstr ""
+"Путешествия и путешествия по Узбекистану - <ahref=\"/\"> travel.uz </a> все"
+"гарантирует безопасность туристов. В настоящем документе Политики конфиденциальности"
+"Travel & Travels to Uzbekistan - местный туроператор Узбектур"
+"«Типы данных, которые собираются и регистрируются и как»"
+"«У нас есть доступ»."
+
+#: .\templates\index.html:220
+msgid "Attraksiyonlar"
+msgstr "достопримечательности"
+
+#: .\templates\index.html:243
 msgid "Biz haqimizda"
 msgstr "насчет нас"
 
-#: .\templates\index.html:269
+#: .\templates\index.html:247
 msgid "Bizning Offis"
 msgstr "Наш офис"
 
-#: .\templates\index.html:284
+#: .\templates\index.html:265
 msgid "Savol va takliflar uchun"
 msgstr "Для вопросов и предложений"
 
-#: .\templates\index.html:296
+#: .\templates\index.html:278
 msgid "Ism Familiya"
 msgstr "Имя Фамилия"
 
-#: .\templates\index.html:305
+#: .\templates\index.html:292
 msgid "Telefon raqam"
 msgstr "Номер телефона"
 
-#: .\templates\index.html:314
+#: .\templates\index.html:306
 msgid "Email"
 msgstr "Эл. адрес"
 
-#: .\templates\index.html:327
+#: .\templates\index.html:320
 msgid "Savol va Takliflar uchun"
 msgstr "Для вопросов и предложений"
 
-#: .\templates\index.html:337
+#: .\templates\index.html:336
 msgid "Yuborish"
 msgstr "Отправлять"
 
-#: .\templates\index.html:356
+#: .\templates\index.html:355
 msgid "Sayyohlar uchun"
 msgstr "Для туристов"
 
-#: .\templates\index.html:357
+#: .\templates\index.html:356
 msgid "Ichki Turizm"
 msgstr "Местный туризм"
 
-#: .\templates\index.html:358
+#: .\templates\index.html:357
 msgid "Tur opertorlarining reyestri"
 msgstr "Реестр туроператоров"
 
-#: .\templates\index.html:359
+#: .\templates\index.html:358
 msgid "Online sorovnoma"
 msgstr "Онлайн-опрос"
 
-#: .\templates\index.html:360
+#: .\templates\index.html:359
 msgid "Ozbekiston xaritasi"
 msgstr "Карта Узбекистана"
 
-#: .\templates\index.html:363
+#: .\templates\index.html:362
 msgid "Biz bilan aloqa"
 msgstr "Свяжитесь с нами"
 
-#: .\templates\index.html:367
+#: .\templates\index.html:371
 msgid "Andijon, Xojaobod, Yangi hayot MFY, 75-uy"
 msgstr "Андижан, Ходжаабад, Новая Жизнь МФЮ, дом 75"
+
+#: .\templates\index.html:428
+#, fuzzy
+#| msgid "Travel Agency Uz"
+msgid "Travel With The Best Agency Travel Uz"
+msgstr "Туристическое Агентство Уз"
+
+#: .\templates\index.html:436
+msgid ""
+"Travel & Tour in Uzbekistan with one of the best Uzbekistan incoming tour "
+"operator – Travel Company UZBEK TOUR by Samarcanda Tour LLC!!!"
+msgstr ""
+"Путешествие и тур по Узбекистану с одним из лучших въездных туров по Узбекистану"
+"оператор – Туристическая компания УЗБЕК ТУР ООО Самарканда Тур!!!"
+
+#: .\templates\index.html:438
+msgid ""
+"Travel Agency Uz by Samarcanda is one of the best Uzbekistan inbound tour "
+"operator. Travelling in Uzbekistan you can discover hospitaly & loveliness "
+"of uzbek poeple, the Silk Road of Central Asia, ninth desert of world – "
+"Kizilkum, legendary cities – Samarkand, Bukhara & Khiva, rich history of the "
+"country, legends, Algorithm, Avicenna, Pahlavan Mahmud, Tamerlane, Ulugbek & "
+"other famous persons, historical monuments – mosques, madrassahs, "
+"mausoleums, minarets, domes, disaster of Aral Sea, uzbeks’ tradition – "
+"wedding party, holidays Navruz & Sharq Taronalari, traditonal game KUPKARI-"
+"BUZKASHI with horses, local foods – palov, shashlik & somsa."
+msgstr ""
+"Турагентство Uz by Samarcanda - один из лучших въездных туров в Узбекистан"
+"оператор. Путешествуя по Узбекистану, вы можете открыть для себя гостеприимство и красоту"
+"узбекского народа, Шелковый путь Центральной Азии, девятая пустыня мира -"
+"Кызылкум, легендарные города - Самарканд, Бухара и Хива, богатая история"
+"страна, легенды, Алгоритм, Авиценна, Пахлаван Махмуд, Тамерлан, Улугбек и"
+"другие известные личности, исторические памятники – мечети, медресе,"
+"мавзолеи, минареты, купола, бедствие Аральского моря, узбекская традиция -"
+"свадьба, праздники Навруз и Шарк Тароналари, традиционная игра КУПКАРИ-"
+"«БУЗКАШИ с лошадьми, местные продукты – плов, шашлык и сомса»."
 
 #: .\travel_agency\settings.py:122
 msgid "English"
@@ -230,3 +307,27 @@ msgstr ""
 #: .\travel_agency\settings.py:125
 msgid "Turkish"
 msgstr ""
+
+#~ msgid "Ma'lumotlar"
+#~ msgstr "Информация"
+
+#~ msgid ""
+#~ "Ozbekiston madaniyati, Markaziy Osiyo xalqlarining kop asrlik ananalari "
+#~ "va turmush tarzi bilan chambarchas bogliq boy tarixga ega"
+#~ msgstr ""
+#~ "«Культура Узбекистана, многовековые традиции народов Средней Азии и»имеет "
+#~ "богатую историю, тесно связанную с образом жизни"
+
+#~ msgid "Xalq sanati"
+#~ msgstr "Народное искусство"
+
+#~ msgid ""
+#~ "Ozbekistonda azaldan noyob istedodli odamlar yashab, xalq sanatining  "
+#~ "nodir ananalarini asrab-avaylab, avloddan-avlodga yetkazib kelmoqdalar. "
+#~ "Ushbu ananalar bizning tariximizni, ajoyib madaniyatimiz va milliy "
+#~ "qadriyatlarimizni unutishga yol bermaydi."
+#~ msgstr ""
+#~ "«Узбекистан всегда был населен уникально талантливыми людьми, а народное "
+#~ "творчество встречается редко»«Они хранят свои традиции и передают их из "
+#~ "поколения в поколение.ананасы - это наша история, наша замечательная "
+#~ "культура и национальность«не позволяет нам забыть наши ценности»."

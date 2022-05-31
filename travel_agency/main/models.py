@@ -1,9 +1,17 @@
 from django.db import models
 
 
+class Attractions(models.Model):
+    title = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='attraction_images')
+
+    def __str__(self):
+        return str(self.title)
+
+
 class City(models.Model):
     name = models.CharField(max_length=255)
-    image = models.ImageField(upload_to='gallery_images/')
+    image = models.ImageField(upload_to='city_images/')
 
     def __str__(self):
         return str(self.name)

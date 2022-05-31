@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Contact, City, Gallery
+from .models import Contact, City, Gallery, Attractions
 
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
@@ -18,3 +18,10 @@ class CityAdmin(admin.ModelAdmin):
 class GalleryAdmin(admin.ModelAdmin):
     list_display = ("title",)
     search_fields = ("title",)
+
+
+@admin.register(Attractions)
+class AttractionAdmin(admin.ModelAdmin):
+    list_display = ("title",)
+    search_fields = ("title",)
+

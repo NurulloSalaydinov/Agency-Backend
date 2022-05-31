@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-30 18:59+0300\n"
+"POT-Creation-Date: 2022-05-31 15:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,14 +31,14 @@ msgid "Galereya"
 msgstr "Gallery"
 
 #: .\templates\index.html:40
-msgid "Ma'lumotlar"
-msgstr "Informations"
+msgid "Contact"
+msgstr ""
 
-#: .\templates\index.html:68
+#: .\templates\index.html:69
 msgid "O'zbek me'morchiligi"
 msgstr "Uzbek architecture"
 
-#: .\templates\index.html:70
+#: .\templates\index.html:71
 msgid ""
 "Me’morchilik ijodining gullab-yashnashi O‘zbekiston Buyuk Ipak yo‘lining "
 "markazi bo‘lgan o‘rta asrlar davriga to‘g‘ri keladi. XIV asrdan boshlab bu "
@@ -47,171 +47,248 @@ msgid ""
 "Shahrisabzdagi Oqsaroy, Buxorodagi Poyi kalon va Labi Hovuz, Xivada minora "
 "va madrasalar barpo etildi"
 msgstr ""
-"Architecture flourishes on the Great Silk Road of Uzbekistan"
-"It dates back to the Middle Ages, when it was the center."
-"World-famous architectural monuments on the ground - Registan in Samarkand"
-"Square, Shahi-Zinda complex, Bibihanim mosque and Gur-Amir mausoleum,"
-"Oqsaroy in Shahrisabz, Poyi Kalon and Labi Hovuz in Bukhara, minaret in Khiva"
-"and madrassas built"
+"Architecture flourishes on the Great Silk Road of UzbekistanIt dates back to "
+"the Middle Ages, when it was the center.World-famous architectural monuments "
+"on the ground - Registan in SamarkandSquare, Shahi-Zinda complex, Bibihanim "
+"mosque and Gur-Amir mausoleum,Oqsaroy in Shahrisabz, Poyi Kalon and Labi "
+"Hovuz in Bukhara, minaret in Khivaand madrassas built"
 
-#: .\templates\index.html:74
+#: .\templates\index.html:75
 msgid "Ozbek madaniy merosi"
 msgstr "Uzbek cultural heritage"
 
-#: .\templates\index.html:76
+#: .\templates\index.html:77
 msgid ""
-"Ozbekiston madaniyati, Markaziy Osiyo xalqlarining kop asrlik ananalari va "
-"turmush tarzi bilan chambarchas bogliq boy tarixga ega"
+"The culture of Uzbekistan has a rich history, which was inextricably linked "
+"by centuries-old traditions and lifestyle of the peoples of Central Asia"
 msgstr ""
-"Culture of Uzbekistan, centuries-old traditions of the peoples of Central "
-"Asia andhas a rich history closely linked to lifestyle"
+"The culture of Uzbekistan has a rich history, which was inextricably linked "
+"by centuries-old traditions and lifestyle of the peoples of Central Asia"
 
-#: .\templates\index.html:80
-msgid "Xalq sanati"
-msgstr ""
+#: .\templates\index.html:81
+msgid "Uzbek cuisine"
+msgstr "Uzbek cuisine"
 
-#: .\templates\index.html:82
+#: .\templates\index.html:83
 msgid ""
-"Ozbekistonda azaldan noyob istedodli odamlar yashab, xalq sanatining  nodir "
-"ananalarini asrab-avaylab, avloddan-avlodga yetkazib kelmoqdalar. Ushbu "
-"ananalar bizning tariximizni, ajoyib madaniyatimiz va milliy "
-"qadriyatlarimizni unutishga yol bermaydi."
+"Fragrant pilaf, delicious kazan-kabob, samsa, bread and hot shurpa - amaze "
+"the residents and guests of Uzbekistan with their color and incomparable "
+"taste."
 msgstr ""
-"Uzbekistan has always been inhabited by uniquely talented people, and folk art is rare"
-"They have been preserving their traditions and passing them on from generation to generation."
-"pineapples are our history, our wonderful culture and national"
-"does not allow us to forget our values."
+"Fragrant pilaf, delicious kazan-kabob, samsa, bread and hot shurpa - amaze "
+"the residents and guests of Uzbekistan with their color and incomparable "
+"taste."
 
-#: .\templates\index.html:92
+#: .\templates\index.html:93
 msgid "Ozbekistonni ozingiz uchun kashf eting!"
 msgstr "Discover Uzbekistan for yourself!"
 
-#: .\templates\index.html:93
+#: .\templates\index.html:95
 msgid ""
 "Ozbekiston Sharqning sirli mamlakatidir. U yerda tarixlar afsonalarda "
 "toplangan, quyosh yil boyi porlab, tabiatning betakrorligi va odamlarning "
 "yuraklari tozaligi buning nishonasidir"
 msgstr ""
-"Uzbekistan is a mysterious country of the East. History is there in legends"
-"collected, the sun shines all year round, the uniqueness of nature and people"
-"purity of heart is a sign of this"
+"Uzbekistan is a mysterious country of the East. History is there in "
+"legendscollected, the sun shines all year round, the uniqueness of nature "
+"and peoplepurity of heart is a sign of this"
 
-#: .\templates\index.html:94
+#: .\templates\index.html:98
 msgid ""
 "Ushbu muborak zaminga kelgan har bir mehmon xursandchilik bilan kutib "
 "olinadi va bir marta tashrif buyurgan kishi yana qaytib kelishni xohlaydi."
 msgstr ""
-"Every guest who comes to this blessed land is welcomed"
-"taken and the person who visited once wants to come back again."
+"Every guest who comes to this blessed land is welcomedtaken and the person "
+"who visited once wants to come back again."
 
-#: .\templates\index.html:96
+#: .\templates\index.html:101
 msgid "Batafsil"
 msgstr "Read more"
 
-#: .\templates\index.html:104
+#: .\templates\index.html:109
 msgid "Ozbekiston shaharlari"
 msgstr "Cities of Uzbekistan"
 
-#: .\templates\index.html:105
+#: .\templates\index.html:110
 msgid "Sayyohlar uchun mashhur yonalish"
 msgstr "A popular destination for tourists"
 
-#: .\templates\index.html:171
+#: .\templates\index.html:133
 msgid "Fotogalareya"
 msgstr "Photo gallery"
 
-#: .\templates\index.html:172
+#: .\templates\index.html:134
 msgid "Sayyohlar uchun mashhur joylar"
 msgstr "Popular places for tourists"
 
-#: .\templates\index.html:200
+#: .\templates\index.html:149
 msgid "Video galareya"
 msgstr "Video gallery"
 
-#: .\templates\index.html:201 .\templates\index.html:266
-#: .\templates\index.html:285
+#: .\templates\index.html:150 .\templates\index.html:244
+#: .\templates\index.html:266
 msgid "Biz bilan sayohat qiling"
 msgstr "Travel with us"
 
-#: .\templates\index.html:220
+#: .\templates\index.html:169
 msgid "Bizning afzaliglarimiz"
 msgstr "Our advantages"
 
-#: .\templates\index.html:221
+#: .\templates\index.html:170
 msgid "Bizning sayyohlar uchun maxsus"
 msgstr "Special for our tourists"
 
-#: .\templates\index.html:229
+#: .\templates\index.html:178
 msgid "Transport hizmati"
 msgstr "Transportation service"
 
-#: .\templates\index.html:241
+#: .\templates\index.html:180
+msgid ""
+"Ozbekiston havo yollari milliy aviakompaniyasi 1992-yil 28-yanvarda "
+"Ozbekiston Respublikasi hududida havo transporti siyosatini ishlab chiqish, "
+"muvofiqlashtirish va amalga oshirishni taminlovchi fuqaro aviatsiyasi davlat "
+"organi sifatida tashkil etilgan bolib, uning asosiy mezonlari xavfsizlik, "
+"ishonchlilik va qulaylikdir."
+msgstr ""
+"National Airline of Uzbekistan on January 28, 1992"
+"Development of air transport policy in the territory of the Republic of Uzbekistan,"
+"Civil Aviation State, which provides coordination and implementation"
+"As a body established, its main criteria are security,"
+"reliability and convenience."
+
+#: .\templates\index.html:192
 msgid "5 yulduzli mehmonxona"
 msgstr "5 star hotel"
 
-#: .\templates\index.html:253
+#: .\templates\index.html:194
+msgid ""
+"Ozbekistondagi sayyohlik agentligi va turoperatori maxsus sayohatlarni "
+"tashkil qiladi. Mijozlarning xohishiga kora toliq moslashtirilgan "
+"sayohatlar. Siz sayohat dasturini, mehmonxonalarni, transportni, "
+"ovqatlanishni, ekskursiyalarni, gidlarni va hokazolarni tanlashingiz mumkin."
+msgstr ""
+"Travel agency and tour operator in Uzbekistan offer special trips"
+"Organizes. Fully customized according to customer wishes"
+"Travel. You have a travel program, hotels, transportation,"
+"You can choose meals, excursions, guides, and etc"
+
+#: .\templates\index.html:206
 msgid "Havfsizlik"
 msgstr "Security"
 
-#: .\templates\index.html:265
+#: .\templates\index.html:208
+msgid ""
+"Travel & Travels to Uzbekistan – <a href=\"/\">travel.uz</a> barcha "
+"turistlarni havfsizligini kafolatlaydi. Ushbu Maxfiylik siyosati hujjatida "
+"Travel & Travels to Uzbekistan – mahalliy Uzbektour sayyohlik operatori "
+"tomonidan toplangan va yozib olingan malumotlar turlari va ulardan qanday "
+"foydalanishimiz mavjud."
+msgstr ""
+"Travel & Travels to Uzbekistan - <ahref=\"/\"> travel.uz </a> all"
+"guarantees the safety of tourists. In this Privacy Policy document"
+"Travel & Travels to Uzbekistan - local Uzbektour tour operator"
+"Types of data collected and recorded by and how"
+"We have access."
+
+#: .\templates\index.html:220
+msgid "Attraksiyonlar"
+msgstr "Attractions"
+
+#: .\templates\index.html:243
 msgid "Biz haqimizda"
 msgstr "About us"
 
-#: .\templates\index.html:269
+#: .\templates\index.html:247
 msgid "Bizning Offis"
 msgstr "Our office"
 
-#: .\templates\index.html:284
+#: .\templates\index.html:265
 msgid "Savol va takliflar uchun"
 msgstr "For questions and suggestions"
 
-#: .\templates\index.html:296
+#: .\templates\index.html:278
 msgid "Ism Familiya"
 msgstr "Full name"
 
-#: .\templates\index.html:305
+#: .\templates\index.html:292
 msgid "Telefon raqam"
 msgstr "Phone number"
 
-#: .\templates\index.html:314
+#: .\templates\index.html:306
 msgid "Email"
 msgstr "Email"
 
-#: .\templates\index.html:327
+#: .\templates\index.html:320
 msgid "Savol va Takliflar uchun"
 msgstr "For questions and suggestions"
 
-#: .\templates\index.html:337
+#: .\templates\index.html:336
 msgid "Yuborish"
 msgstr "Submit"
 
-#: .\templates\index.html:356
+#: .\templates\index.html:355
 msgid "Sayyohlar uchun"
 msgstr "For Tourists"
 
-#: .\templates\index.html:357
+#: .\templates\index.html:356
 msgid "Ichki Turizm"
 msgstr "Internal Tourism"
 
-#: .\templates\index.html:358
+#: .\templates\index.html:357
 msgid "Tur opertorlarining reyestri"
 msgstr "Register of tour operators"
 
-#: .\templates\index.html:359
+#: .\templates\index.html:358
 msgid "Online sorovnoma"
 msgstr "Online survey"
 
-#: .\templates\index.html:360
+#: .\templates\index.html:359
 msgid "Ozbekiston xaritasi"
 msgstr "Map of Uzbekistan"
 
-#: .\templates\index.html:363
+#: .\templates\index.html:362
 msgid "Biz bilan aloqa"
 msgstr "Contact us"
 
-#: .\templates\index.html:367
+#: .\templates\index.html:371
 msgid "Andijon, Xojaobod, Yangi hayot MFY, 75-uy"
 msgstr "Andijan, Khojaabad, Yangi hayot MFY, house 75"
+
+#: .\templates\index.html:428
+#, fuzzy
+#| msgid "Travel Agency Uz"
+msgid "Travel With The Best Agency Travel Uz"
+msgstr "Travel With The Best Agency Travel Uz"
+
+#: .\templates\index.html:436
+msgid ""
+"Travel & Tour in Uzbekistan with one of the best Uzbekistan incoming tour "
+"operator – Travel Company UZBEK TOUR by Samarcanda Tour LLC!!!"
+msgstr ""
+"Travel & Tour in Uzbekistan with one of the best Uzbekistan incoming tour "
+"operator – Travel Company UZBEK TOUR by Samarcanda Tour LLC!!!"
+
+#: .\templates\index.html:438
+msgid ""
+"Travel Agency Uz by Samarcanda is one of the best Uzbekistan inbound tour "
+"operator. Travelling in Uzbekistan you can discover hospitaly & loveliness "
+"of uzbek poeple, the Silk Road of Central Asia, ninth desert of world – "
+"Kizilkum, legendary cities – Samarkand, Bukhara & Khiva, rich history of the "
+"country, legends, Algorithm, Avicenna, Pahlavan Mahmud, Tamerlane, Ulugbek & "
+"other famous persons, historical monuments – mosques, madrassahs, "
+"mausoleums, minarets, domes, disaster of Aral Sea, uzbeks’ tradition – "
+"wedding party, holidays Navruz & Sharq Taronalari, traditonal game KUPKARI-"
+"BUZKASHI with horses, local foods – palov, shashlik & somsa."
+msgstr ""
+"Travel Agency Uz by Samarcanda is one of the best Uzbekistan inbound tour "
+"operator. Travelling in Uzbekistan you can discover hospitaly & loveliness "
+"of uzbek poeple, the Silk Road of Central Asia, ninth desert of world – "
+"Kizilkum, legendary cities – Samarkand, Bukhara & Khiva, rich history of the "
+"country, legends, Algorithm, Avicenna, Pahlavan Mahmud, Tamerlane, Ulugbek & "
+"other famous persons, historical monuments – mosques, madrassahs, "
+"mausoleums, minarets, domes, disaster of Aral Sea, uzbeks’ tradition – "
+"wedding party, holidays Navruz & Sharq Taronalari, traditonal game KUPKARI-"
+"BUZKASHI with horses, local foods – palov, shashlik & somsa."
 
 #: .\travel_agency\settings.py:122
 msgid "English"
@@ -228,3 +305,24 @@ msgstr ""
 #: .\travel_agency\settings.py:125
 msgid "Turkish"
 msgstr ""
+
+#~ msgid "Ma'lumotlar"
+#~ msgstr "Informations"
+
+#~ msgid ""
+#~ "Ozbekiston madaniyati, Markaziy Osiyo xalqlarining kop asrlik ananalari "
+#~ "va turmush tarzi bilan chambarchas bogliq boy tarixga ega"
+#~ msgstr ""
+#~ "Culture of Uzbekistan, centuries-old traditions of the peoples of Central "
+#~ "Asia andhas a rich history closely linked to lifestyle"
+
+#~ msgid ""
+#~ "Ozbekistonda azaldan noyob istedodli odamlar yashab, xalq sanatining  "
+#~ "nodir ananalarini asrab-avaylab, avloddan-avlodga yetkazib kelmoqdalar. "
+#~ "Ushbu ananalar bizning tariximizni, ajoyib madaniyatimiz va milliy "
+#~ "qadriyatlarimizni unutishga yol bermaydi."
+#~ msgstr ""
+#~ "Uzbekistan has always been inhabited by uniquely talented people, and "
+#~ "folk art is rareThey have been preserving their traditions and passing "
+#~ "them on from generation to generation.pineapples are our history, our "
+#~ "wonderful culture and nationaldoes not allow us to forget our values."

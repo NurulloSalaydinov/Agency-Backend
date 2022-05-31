@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-30 18:59+0300\n"
+"POT-Creation-Date: 2022-05-31 15:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,14 +31,14 @@ msgid "Galereya"
 msgstr "Galeri"
 
 #: .\templates\index.html:40
-msgid "Ma'lumotlar"
-msgstr "Bilgi"
+msgid "Contact"
+msgstr "İletişim"
 
-#: .\templates\index.html:68
+#: .\templates\index.html:69
 msgid "O'zbek me'morchiligi"
 msgstr "Özbek mimarisi"
 
-#: .\templates\index.html:70
+#: .\templates\index.html:71
 msgid ""
 "Me’morchilik ijodining gullab-yashnashi O‘zbekiston Buyuk Ipak yo‘lining "
 "markazi bo‘lgan o‘rta asrlar davriga to‘g‘ri keladi. XIV asrdan boshlab bu "
@@ -47,154 +47,249 @@ msgid ""
 "Shahrisabzdagi Oqsaroy, Buxorodagi Poyi kalon va Labi Hovuz, Xivada minora "
 "va madrasalar barpo etildi"
 msgstr ""
+"Özbekistan'ın Büyük İpek Yolu'nda mimari gelişiyor"
+"Merkez olduğu Orta Çağ'a kadar uzanıyor."
+"Yerdeki dünyaca ünlü mimari anıtlar - Semerkant'ta Registan"
+"Meydan, Shahi-Zinda kompleksi, Bibihanim camii ve Gur-Amir mozolesi"
+"Şehrisabz'da Oqsaroy, Buhara'da Poyi Kalon ve Labi Hovuz, Hiva'da minare"
+"ve medreseler inşa edildi"
 
-#: .\templates\index.html:74
+#: .\templates\index.html:75
 msgid "Ozbek madaniy merosi"
-msgstr ""
+msgstr "Özbek madaniy merosi"
 
-#: .\templates\index.html:76
+#: .\templates\index.html:77
 msgid ""
-"Ozbekiston madaniyati, Markaziy Osiyo xalqlarining kop asrlik ananalari va "
-"turmush tarzi bilan chambarchas bogliq boy tarixga ega"
+"The culture of Uzbekistan has a rich history, which was inextricably linked "
+"by centuries-old traditions and lifestyle of the peoples of Central Asia"
 msgstr ""
+"Özbekistan kültürü, ayrılmaz bir şekilde bağlantılı olan zengin bir tarihe sahiptir"
+"Orta Asya halklarının asırlık gelenekleri ve yaşam tarzları ile"
 
-#: .\templates\index.html:80
-msgid "Xalq sanati"
-msgstr ""
+#: .\templates\index.html:81
+msgid "Uzbek cuisine"
+msgstr "Özbek mutfağı"
 
-#: .\templates\index.html:82
+#: .\templates\index.html:83
 msgid ""
-"Ozbekistonda azaldan noyob istedodli odamlar yashab, xalq sanatining  nodir "
-"ananalarini asrab-avaylab, avloddan-avlodga yetkazib kelmoqdalar. Ushbu "
-"ananalar bizning tariximizni, ajoyib madaniyatimiz va milliy "
-"qadriyatlarimizni unutishga yol bermaydi."
+"Fragrant pilaf, delicious kazan-kabob, samsa, bread and hot shurpa - amaze "
+"the residents and guests of Uzbekistan with their color and incomparable "
+"taste."
 msgstr ""
-
-#: .\templates\index.html:92
-msgid "Ozbekistonni ozingiz uchun kashf eting!"
-msgstr ""
+"Kokulu pilav, lezzetli kazan-kebap, samsa, ekmek ve sıcak shurpa - şaşırtın"
+"Renkleri ve emsalsiz özellikleriyle Özbekistan sakinleri ve misafirleri"
+"tatmak."
 
 #: .\templates\index.html:93
+msgid "Ozbekistonni ozingiz uchun kashf eting!"
+msgstr "Özbekistan'ı kendiniz keşfedin!"
+
+#: .\templates\index.html:95
 msgid ""
 "Ozbekiston Sharqning sirli mamlakatidir. U yerda tarixlar afsonalarda "
 "toplangan, quyosh yil boyi porlab, tabiatning betakrorligi va odamlarning "
 "yuraklari tozaligi buning nishonasidir"
 msgstr ""
+"Özbekistan Doğu'nun gizemli bir ülkesidir. Tarih efsanelerde vardır"
+"toplanan, güneş tüm yıl boyunca parlıyor, doğanın ve insanın eşsizliği"
+"kalp temizliği bunun göstergesidir"
 
-#: .\templates\index.html:94
+#: .\templates\index.html:98
 msgid ""
 "Ushbu muborak zaminga kelgan har bir mehmon xursandchilik bilan kutib "
 "olinadi va bir marta tashrif buyurgan kishi yana qaytib kelishni xohlaydi."
 msgstr ""
+"Bu mübarek topraklara gelen her misafir ağırlanır"
+"Alındı ​​ve bir kez ziyaret eden kişi tekrar geri gelmek istiyor."
 
-#: .\templates\index.html:96
+#: .\templates\index.html:101
 msgid "Batafsil"
-msgstr ""
+msgstr "Devamını oku"
 
-#: .\templates\index.html:104
+#: .\templates\index.html:109
 msgid "Ozbekiston shaharlari"
-msgstr ""
+msgstr "Özbekistan Şehirleri"
 
-#: .\templates\index.html:105
+#: .\templates\index.html:110
 msgid "Sayyohlar uchun mashhur yonalish"
-msgstr ""
+msgstr "Turistler için popüler bir destinasyon"
 
-#: .\templates\index.html:171
+#: .\templates\index.html:133
 msgid "Fotogalareya"
-msgstr ""
+msgstr "fotoğraf Galerisi"
 
-#: .\templates\index.html:172
+#: .\templates\index.html:134
 msgid "Sayyohlar uchun mashhur joylar"
-msgstr ""
+msgstr "Turistler için popüler yerler"
 
-#: .\templates\index.html:200
+#: .\templates\index.html:149
 msgid "Video galareya"
-msgstr ""
+msgstr "video galerisi"
 
-#: .\templates\index.html:201 .\templates\index.html:266
-#: .\templates\index.html:285
+#: .\templates\index.html:150 .\templates\index.html:244
+#: .\templates\index.html:266
 msgid "Biz bilan sayohat qiling"
+msgstr "Bizimle seyahat edin"
+
+#: .\templates\index.html:169
+msgid "Bizning afzaliglarimiz"
+msgstr "Bizim avantajlarımız"
+
+#: .\templates\index.html:170
+msgid "Bizning sayyohlar uchun maxsus"
+msgstr "Turistlerimize özel"
+
+#: .\templates\index.html:178
+msgid "Transport hizmati"
+msgstr "Taşımacılık servisi"
+
+#: .\templates\index.html:180
+msgid ""
+"Ozbekiston havo yollari milliy aviakompaniyasi 1992-yil 28-yanvarda "
+"Ozbekiston Respublikasi hududida havo transporti siyosatini ishlab chiqish, "
+"muvofiqlashtirish va amalga oshirishni taminlovchi fuqaro aviatsiyasi davlat "
+"organi sifatida tashkil etilgan bolib, uning asosiy mezonlari xavfsizlik, "
+"ishonchlilik va qulaylikdir."
 msgstr ""
+"28 Ocak 1992'de Özbekistan Ulusal Havayolu"
+"Özbekistan Cumhuriyeti topraklarında hava taşımacılığı politikasının geliştirilmesi,"
+"Koordinasyonu ve uygulamayı sağlayan Sivil Havacılık Devleti"
+"Kurulu bir kurum olarak ana kriteri güvenliktir"
+"güvenilirlik ve rahatlık."
+
+#: .\templates\index.html:192
+msgid "5 yulduzli mehmonxona"
+msgstr "5 yıldızlı otel"
+
+#: .\templates\index.html:194
+msgid ""
+"Ozbekistondagi sayyohlik agentligi va turoperatori maxsus sayohatlarni "
+"tashkil qiladi. Mijozlarning xohishiga kora toliq moslashtirilgan "
+"sayohatlar. Siz sayohat dasturini, mehmonxonalarni, transportni, "
+"ovqatlanishni, ekskursiyalarni, gidlarni va hokazolarni tanlashingiz mumkin."
+msgstr ""
+"Özbekistan'daki seyahat acentesi ve tur operatörü özel geziler sunuyor"
+"Organize eder. Tamamen müşteri isteklerine göre özelleştirilmiş"
+"Seyahat. Bir seyahat programınız var, oteller, ulaşım,"
+"Yemekler, geziler, rehberler vb. seçebilirsiniz."
+
+#: .\templates\index.html:206
+msgid "Havfsizlik"
+msgstr "Güvenlik"
+
+#: .\templates\index.html:208
+msgid ""
+"Travel & Travels to Uzbekistan – <a href=\"/\">travel.uz</a> barcha "
+"turistlarni havfsizligini kafolatlaydi. Ushbu Maxfiylik siyosati hujjatida "
+"Travel & Travels to Uzbekistan – mahalliy Uzbektour sayyohlik operatori "
+"tomonidan toplangan va yozib olingan malumotlar turlari va ulardan qanday "
+"foydalanishimiz mavjud."
+msgstr ""
+"Özbekistan'a Seyahat ve Seyahatler - <ahref=\"/\"> travel.uz </a> tümü"
+"turistlerin güvenliğini garanti eder. Bu Gizlilik Politikası belgesinde"
+"Özbekistan'a Seyahat ve Seyahatler - yerel Uzbektour tur operatörü"
+"Toplanan ve kaydedilen veri türleri ve nasıl"
+"Erişimimiz var."
 
 #: .\templates\index.html:220
-msgid "Bizning afzaliglarimiz"
-msgstr ""
+msgid "Attraksiyonlar"
+msgstr "Gezilecek yerler"
 
-#: .\templates\index.html:221
-msgid "Bizning sayyohlar uchun maxsus"
-msgstr ""
+#: .\templates\index.html:243
+msgid "Biz haqimizda"
+msgstr "Hakkımızda"
 
-#: .\templates\index.html:229
-msgid "Transport hizmati"
-msgstr ""
-
-#: .\templates\index.html:241
-msgid "5 yulduzli mehmonxona"
-msgstr ""
-
-#: .\templates\index.html:253
-msgid "Havfsizlik"
-msgstr ""
+#: .\templates\index.html:247
+msgid "Bizning Offis"
+msgstr "Bizim ofisimiz"
 
 #: .\templates\index.html:265
-msgid "Biz haqimizda"
-msgstr ""
-
-#: .\templates\index.html:269
-msgid "Bizning Offis"
-msgstr ""
-
-#: .\templates\index.html:284
 msgid "Savol va takliflar uchun"
-msgstr ""
+msgstr "Soru ve önerileriniz için"
 
-#: .\templates\index.html:296
+#: .\templates\index.html:278
 msgid "Ism Familiya"
-msgstr ""
+msgstr "İsim soyisim"
 
-#: .\templates\index.html:305
+#: .\templates\index.html:292
 msgid "Telefon raqam"
-msgstr ""
+msgstr "Telefon numarası"
 
-#: .\templates\index.html:314
+#: .\templates\index.html:306
 msgid "Email"
-msgstr ""
+msgstr "E-posta"
 
-#: .\templates\index.html:327
+#: .\templates\index.html:320
 msgid "Savol va Takliflar uchun"
-msgstr ""
+msgstr "Soru ve Önerileriniz için"
 
-#: .\templates\index.html:337
+#: .\templates\index.html:336
 msgid "Yuborish"
-msgstr ""
+msgstr "Göndermek"
+
+#: .\templates\index.html:355
+msgid "Sayyohlar uchun"
+msgstr "Turistler için"
 
 #: .\templates\index.html:356
-msgid "Sayyohlar uchun"
-msgstr ""
+msgid "Ichki Turizm"
+msgstr "Yurtiçi Turizm"
 
 #: .\templates\index.html:357
-msgid "Ichki Turizm"
-msgstr ""
+msgid "Tur opertorlarining reyestri"
+msgstr "Tur operatörlerinin kaydı"
 
 #: .\templates\index.html:358
-msgid "Tur opertorlarining reyestri"
-msgstr ""
+msgid "Online sorovnoma"
+msgstr "çevrimiçi anket"
 
 #: .\templates\index.html:359
-msgid "Online sorovnoma"
-msgstr ""
-
-#: .\templates\index.html:360
 msgid "Ozbekiston xaritasi"
-msgstr ""
+msgstr "Özbekistan Haritası"
 
-#: .\templates\index.html:363
+#: .\templates\index.html:362
 msgid "Biz bilan aloqa"
-msgstr ""
+msgstr "Bize Ulaşın"
 
-#: .\templates\index.html:367
+#: .\templates\index.html:371
 msgid "Andijon, Xojaobod, Yangi hayot MFY, 75-uy"
+msgstr "Andijan, Khojaabad, Yengi Heyat MFY, ev 75"
+
+#: .\templates\index.html:428
+#, fuzzy
+#| msgid "Travel Agency Uz"
+msgid "Travel With The Best Agency Travel Uz"
+msgstr "Seyahat Acentası Uz"
+
+#: .\templates\index.html:436
+msgid ""
+"Travel & Tour in Uzbekistan with one of the best Uzbekistan incoming tour "
+"operator – Travel Company UZBEK TOUR by Samarcanda Tour LLC!!!"
 msgstr ""
+"En iyi Özbekistan gelen turlarından biriyle Özbekistan'da Seyahat ve Tur"
+"operatör - Seyahat Şirketi ÖZBEK TOUR by Samarcanda Tour LLC !!!"
+
+#: .\templates\index.html:438
+msgid ""
+"Travel Agency Uz by Samarcanda is one of the best Uzbekistan inbound tour "
+"operator. Travelling in Uzbekistan you can discover hospitaly & loveliness "
+"of uzbek poeple, the Silk Road of Central Asia, ninth desert of world – "
+"Kizilkum, legendary cities – Samarkand, Bukhara & Khiva, rich history of the "
+"country, legends, Algorithm, Avicenna, Pahlavan Mahmud, Tamerlane, Ulugbek & "
+"other famous persons, historical monuments – mosques, madrassahs, "
+"mausoleums, minarets, domes, disaster of Aral Sea, uzbeks’ tradition – "
+"wedding party, holidays Navruz & Sharq Taronalari, traditonal game KUPKARI-"
+"BUZKASHI with horses, local foods – palov, shashlik & somsa."
+msgstr ""
+"Seyahat Acentesi Uz by Samarcanda, en iyi Özbekistan inbound turlarından biridir"
+"operatör. Özbekistan'da seyahat ederken misafirperverliği ve güzelliği keşfedebilirsiniz"
+"Özbek halkının, Orta Asya'nın İpek Yolu, dünyanın dokuzuncu çölü -"
+"Kızılkum, efsanevi şehirler - Semerkant, Buhara ve Hiva, zengin tarihi"
+"ülke, efsaneler, Algoritma, İbn Sina, Pahlavan Mahmud, Timur, Uluğbek &"
+"diğer ünlüler, tarihi eserler - camiler, medreseler"
+"türbeler, minareler, kubbeler, Aral Denizi faciası, Özbek geleneği -"
+"düğün partisi, bayramlar Navruz & Sharq Taronalari, geleneksel oyun KUPKARI-"
+"Atlı BUZKASHI, yöresel yemekler - pirinç, shashlik & somsa."
 
 #: .\travel_agency\settings.py:122
 msgid "English"
@@ -211,3 +306,6 @@ msgstr ""
 #: .\travel_agency\settings.py:125
 msgid "Turkish"
 msgstr ""
+
+#~ msgid "Ma'lumotlar"
+#~ msgstr "Bilgi"

@@ -37,7 +37,7 @@
             <div class="navbar-end">
                 <a href="#city" class="navbar-item">{% trans 'Shaharlar' %}</a>
                 <a href="#photo" class="navbar-item">{% trans 'Galereya' %}</a>
-                <a href="#why_choose_us" class="navbar-item">{% trans "Ma'lumotlar" %}</a>
+                <a href="#contact" class="navbar-item">{% trans "Contact" %}</a>
                 <a href="#" class="navbar-item control">
                     <form action="{% url 'main:set_language' %}" method="post">
                         {% csrf_token %}
@@ -64,7 +64,7 @@
 
     <!-- section home -->
     <section class="py-4" id="home">
-        <div class="container">
+        <div class=" container">
             <div class="text-content">
                 <h1 class="home-title">{% trans "O'zbek me'morchiligi" %}</h1>
                 <p class="home-desc">
@@ -74,13 +74,13 @@
             <div class="text-content" style="display: none;">
                 <h1 class="home-title">{% trans 'Ozbek madaniy merosi' %}</h1>
                 <p class="home-desc">
-                    {% trans 'Ozbekiston madaniyati, Markaziy Osiyo xalqlarining kop asrlik ananalari va turmush tarzi bilan chambarchas bogliq boy tarixga ega' %}
+                    {% trans 'The culture of Uzbekistan has a rich history, which was inextricably linked by centuries-old traditions and lifestyle of the peoples of Central Asia' %}
                 </p>
             </div>
             <div class="text-content" style="display: none;">
-                <h1 class="home-title">{% trans 'Xalq sanati' %}</h1>
+                <h1 class="home-title">{% trans 'Uzbek cuisine' %}</h1>
                 <p class="home-desc">
-                    {% trans 'Ozbekistonda azaldan noyob istedodli odamlar yashab, xalq sanatining  nodir ananalarini asrab-avaylab, avloddan-avlodga yetkazib kelmoqdalar. Ushbu ananalar bizning tariximizni, ajoyib madaniyatimiz va milliy qadriyatlarimizni unutishga yol bermaydi.' %}
+                    {% trans 'Fragrant pilaf, delicious kazan-kabob, samsa, bread and hot shurpa - amaze the residents and guests of Uzbekistan with their color and incomparable taste.' %}
                 </p>
             </div>
         </div>
@@ -88,8 +88,8 @@
     <!-- end section home -->
     <!-- section start -->
     <section class="py-4" id="start">
-        <div class="container">
-            <div class="py-6 has-text-centered has-text-dark">
+        <div class=" container">
+            <div class="py-6 has-text-centered-mobile has-text-dark">
                 <h1 class="pop-title">{% trans 'Ozbekistonni ozingiz uchun kashf eting!' %}</h1>
                 <h3 class="pop-subtitle">
                     {% trans 'Ozbekiston Sharqning sirli mamlakatidir. U yerda tarixlar afsonalarda toplangan, quyosh yil boyi porlab, tabiatning betakrorligi va odamlarning yuraklari tozaligi buning nishonasidir' %}
@@ -98,26 +98,27 @@
                     {% trans 'Ushbu muborak zaminga kelgan har bir mehmon xursandchilik bilan kutib olinadi va bir marta tashrif buyurgan kishi yana qaytib kelishni xohlaydi.' %}
                 </h4>
                 <br>
-                <button class="button is-primary py-3 px-6" onclick="openModal()">{% trans 'Batafsil' %}</button>
+                <button class="button is-primary py-3 " onclick="openModal()">{% trans 'Batafsil' %}</button>
             </div>
         </div>
     </section>
     <!-- end section start -->
     <!-- section city -->
     <section class="py-4" id="city">
-        <div class="container has-text-centered">
+        <div class="has-text-centered-mobile container">
             <h3 class="pop-subtitle is-size-3 has-text-dark">{% trans 'Ozbekiston shaharlari' %}</h3>
             <h3 class="pop-subtitle is-size-5">{% trans 'Sayyohlar uchun mashhur yonalish' %}</h3>
-            <div class="flex py-3">
+            <div class="columns py-3">
 
                 {% for city in cities %}
 
-                <div class="block">
-
-                    <div class="watermark">
-                        <div class="bg-dark" data-target="{{ city.name }}"></div>
+                <div class="column is-4">
+                    <div class="block">
+                        <div class="watermark">
+                            <div class="bg-dark" data-target="{{ city.name }}"></div>
+                        </div>
+                        <img src="{{ city.image.url }}" alt="" />
                     </div>
-                    <img src="{{ city.image.url }}" alt="" />
                 </div>
 
                 {% endfor %}
@@ -127,15 +128,15 @@
     </section>
     <!-- end section city -->
     <!-- section photo -->
-    <section class="py-4" id="photo">
-        <div class="container has-text-centered">
+    <section class="py-4 " id="photo">
+        <div class="has-text-centered-mobile container">
             <h3 class="pop-subtitle is-size-3 has-text-dark">{% trans 'Fotogalareya' %}</h3>
             <h3 class="pop-subtitle is-size-5">{% trans 'Sayyohlar uchun mashhur joylar' %}</h3>
 
-            <div class="flex py-6">
+            <div class="columns py-6">
                 {% for gallery in galleries %}
-                <div class="image-content">
-                    <img src="{{ gallery.image.url }}" alt="">
+                <div class="column is-4 image-content">
+                    <img src="{{ gallery.image.url }}" alt="" onclick="openImage(this.src)">
                 </div>
                 {% endfor %}
             </div>
@@ -144,7 +145,7 @@
     <!-- end section photo -->
     <!-- section video -->
     <section class="py-4" id="video">
-        <div class="container has-text-centered py-3">
+        <div class=" container has-text-centered-mobile py-3">
             <h3 class="pop-subtitle is-size-3 has-text-dark">{% trans 'Video galareya' %}</h3>
             <h3 class="pop-subtitle is-size-5">{% trans 'Biz bilan sayohat qiling' %}</h3>
             <br>
@@ -152,10 +153,10 @@
                 <iframe src="https://www.youtube.com/embed/xlKxZweINyE" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/xlKxZweINyE" title="YouTube video player" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/och2BwtshWc" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/xlKxZweINyE" title="YouTube video player" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/_ZH1WsIr2Zk" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
@@ -164,48 +165,48 @@
     <!-- end section video -->
     <!-- section why_choose_us -->
     <section class="py-4" id="why_choose_us">
-        <div class="container has-text-centered py-3">
+        <div class=" container has-text-centered-mobile py-3">
             <h1 class="pop-subtitle is-size-3 has-text-dark">{% trans 'Bizning afzaliglarimiz' %}</h1>
             <h3 class="pop-subtitle is-size-5">{% trans 'Bizning sayyohlar uchun maxsus' %}</h3>
             <div class="columns py-4">
                 <div class="column is-4">
-                    <div class="card pt-5">
+                    <div class="card pt-5" style="height: 100%;">
                         <img style="width: 100% !important;height: 150px !important;object-fit: contain"
                             src="/static/assets/img/plane.png" alt="" />
                         <div class="card-content">
                             <hr>
                             <h1 class="pop-title mb-1 is-size-4">{% trans 'Transport hizmati' %}</h1>
-                            <h3 class="pop-smalltitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium
-                                expedita repudiandae.</h3>
+                            <h3 class="pop-smalltitle">
+                                {% trans 'Ozbekiston havo yollari milliy aviakompaniyasi 1992-yil 28-yanvarda Ozbekiston Respublikasi hududida havo transporti siyosatini ishlab chiqish, muvofiqlashtirish va amalga oshirishni taminlovchi fuqaro aviatsiyasi davlat organi sifatida tashkil etilgan bolib, uning asosiy mezonlari xavfsizlik, ishonchlilik va qulaylikdir.' %}
+                            </h3>
                         </div>
                     </div>
                 </div>
 
                 <div class="column is-4">
-                    <div class="card pt-5">
+                    <div class="card pt-5" style="height: 100%;">
                         <img style="width: 100% !important;height: 150px !important;object-fit: contain"
                             src="/static/assets/img/star.png" alt="" />
                         <div class="card-content">
                             <hr>
                             <h1 class="pop-title mb-1 is-size-4">{% trans '5 yulduzli mehmonxona' %}</h1>
-                            <h3 class="pop-smalltitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium
-                                expedita repudiandae.</h3>
+                            <h3 class="pop-smalltitle">
+                                {% trans 'Ozbekistondagi sayyohlik agentligi va turoperatori maxsus sayohatlarni tashkil qiladi. Mijozlarning xohishiga kora toliq moslashtirilgan sayohatlar. Siz sayohat dasturini, mehmonxonalarni, transportni, ovqatlanishni, ekskursiyalarni, gidlarni va hokazolarni tanlashingiz mumkin.' %}
+                            </h3>
                         </div>
                     </div>
                 </div>
 
                 <div class="column is-4">
-                    <div class="card pt-5">
+                    <div class="card pt-5" style="height: 100%;">
                         <img style="width: 100% !important;height: 150px !important;object-fit: contain"
                             src="/static/assets/img/safe.png" alt="" />
                         <div class="card-content">
                             <hr>
                             <h1 class="pop-title mb-1 is-size-4">{% trans 'Havfsizlik' %}</h1>
-                            <h3 class="pop-smalltitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium
-                                expedita repudiandae.</h3>
+                            <h3 class="pop-smalltitle">
+                                {% trans 'Travel & Travels to Uzbekistan – <a href="/">travel.uz</a> barcha turistlarni havfsizligini kafolatlaydi. Ushbu Maxfiylik siyosati hujjatida Travel & Travels to Uzbekistan – mahalliy Uzbektour sayyohlik operatori tomonidan toplangan va yozib olingan malumotlar turlari va ulardan qanday foydalanishimiz mavjud.' %}
+                            </h3>
                         </div>
                     </div>
                 </div>
@@ -213,9 +214,35 @@
         </div>
     </section>
     <!-- end section why_choose_us -->
+    <!-- section attractions -->
+    <section id="attractions" class="py-3">
+        <div class="container">
+
+            <div class="has-text-centered-mobile pb-3">
+                <h1 class="pop-subtitle is-size-3 has-text-dark">{% trans 'Attraksiyonlar' %}</h1>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    {% for attraction in attractions %}
+                        <div class="swiper-slide">
+                            <div class="attraction-image">
+                                <img src="{{ attraction.image.url }}" alt="">
+                                <div class="attraction-title">
+                                    <p class="pop-subtitle">{{ attraction.title }}</p>
+                                </div>
+                                <div class="modal-background"></div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+        </div>
+    </section>
+    <!-- end section attractions -->
     <!-- section about us -->
-    <section class="py-4" id="aboutus">
-        <div class="container has-text-centered py-3">
+    <!-- <section class="py-4" id="aboutus">
+        <div class=" container has-text-centered-mobile py-3">
             <h3 class="pop-subtitle is-size-3 has-text-dark">{% trans 'Biz haqimizda' %}</h3>
             <h3 class="pop-subtitle is-size-5">{% trans 'Biz bilan sayohat qiling' %}</h3>
             <div class="columns mt-5 box">
@@ -233,11 +260,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- end section about us -->
     <!-- section contact -->
     <section class="py-4" id="contact">
-        <div class="container has-text-centered">
+        <div class=" container has-text-centered-mobile">
             <h1 class="pop-subtitle is-size-3 has-text-dark">{% trans 'Savol va takliflar uchun' %}</h1>
             <h3 class="pop-subtitle is-size-5">{% trans 'Biz bilan sayohat qiling' %}</h3>
             <form method="post">
@@ -290,16 +317,18 @@
                             </div>
                         </div>
 
-                    </div>
-
-                    <div class="column is-6">
-
                         <div class="field">
                             <div class="control">
                                 <textarea name="message" class="textarea"
                                     placeholder="{% trans 'Savol va Takliflar uchun' %}" rows="5"></textarea>
                             </div>
                         </div>
+
+                    </div>
+
+                    <div class="column is-6">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193357.02531910647!2d72.17956028667803!3d40.7795396436679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bc901d6b13d4ef%3A0xfc45bcaa7973dfac!2sAndijan%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1653998937424!5m2!1sen!2s" width="100%" height="300px" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                     </div>
 
@@ -323,7 +352,7 @@
     <!-- footer -->
     <section id="footer" class="pt-6">
         <footer class="footer has-background-dark pb-6">
-            <div class="container py-4">
+            <div class=" container py-4">
                 <div class="columns is-flex is-flex-wrap-wrap">
                     <div class="column">
                         <h1 class="pop-title has-text-light">{% trans 'Sayyohlar uchun' %}</h1>
@@ -399,7 +428,7 @@
         <div class="modal-background"></div>
         <div class="modal-card">
             <header class="modal-card-head">
-                <p class="modal-card-title">Travel Agency Uz</p>
+                <p class="modal-card-title">{% trans 'Travel With The Best Agency Travel Uz' %}</p>
                 <button class="delete" aria-label="close" onclick="closeModal()"></button>
             </header>
             <section class="modal-card-body">
@@ -407,15 +436,16 @@
                     <img src="/static/assets/img/photo/sme-comp-office-desktop-stage.jpg" alt="">
                 </div>
                 <br>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem nihil eum eaque quas voluptatum accusamus minima quod sunt doloremque ab tenetur perspiciatis vel culpa perferendis reprehenderit nam atque voluptate officiis dignissimos similique odio, corrupti ratione soluta libero! Eligendi ab nisi dolorum. Pariatur odio, fugit rem consequatur ducimus totam magnam quas ad quo aliquam facilis sed iusto vitae aspernatur possimus deleniti debitis magni accusantium obcaecati quia eveniet officiis? Aspernatur eligendi harum, nisi quia magnam corrupti exercitationem saepe praesentium eos tempora, voluptates suscipit, a consequuntur aliquam. Necessitatibus aliquam minima fuga praesentium nam dolorum ducimus incidunt quod quas, autem possimus, quis dicta! Deserunt?
+                <strong>{% trans 'Travel & Tour in Uzbekistan with one of the best Uzbekistan incoming tour operator – Travel Company UZBEK TOUR by Samarcanda Tour LLC!!!' %}</strong>
+                <br>
+                {% trans 'Travel Agency Uz by Samarcanda is one of the best Uzbekistan inbound tour operator. Travelling in Uzbekistan you can discover hospitaly & loveliness of uzbek poeple, the Silk Road of Central Asia, ninth desert of world – Kizilkum, legendary cities – Samarkand, Bukhara & Khiva, rich history of the country, legends, Algorithm, Avicenna, Pahlavan Mahmud, Tamerlane, Ulugbek & other famous persons, historical monuments – mosques, madrassahs, mausoleums, minarets, domes, disaster of Aral Sea, uzbeks’ tradition – wedding party, holidays Navruz & Sharq Taronalari, traditonal game KUPKARI-BUZKASHI with horses, local foods – palov, shashlik & somsa.' %}
             </section>
-            <footer class="modal-card-foot">
-                <button class="button is-primary" onclick="closeModal()">Close</button>
-            </footer>
         </div>
     </div>
     <!-- end modal -->
 
+    <!-- swiper -->
+    <script src="/static/assets/js/swiper.js"></script>
     <!-- custom js -->
     <script src="/static/assets/js/app.js"></script>
 </body>
