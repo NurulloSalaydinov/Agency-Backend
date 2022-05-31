@@ -77,10 +77,14 @@ msgid ""
 "ananalar bizning tariximizni, ajoyib madaniyatimiz va milliy "
 "qadriyatlarimizni unutishga yol bermaydi."
 msgstr ""
+"Uzbekistan has always been inhabited by uniquely talented people, and folk art is rare"
+"They have been preserving their traditions and passing them on from generation to generation."
+"pineapples are our history, our wonderful culture and national"
+"does not allow us to forget our values."
 
 #: .\templates\index.html:92
 msgid "Ozbekistonni ozingiz uchun kashf eting!"
-msgstr ""
+msgstr "Discover Uzbekistan for yourself!"
 
 #: .\templates\index.html:93
 msgid ""
@@ -88,121 +92,126 @@ msgid ""
 "toplangan, quyosh yil boyi porlab, tabiatning betakrorligi va odamlarning "
 "yuraklari tozaligi buning nishonasidir"
 msgstr ""
+"Uzbekistan is a mysterious country of the East. History is there in legends"
+"collected, the sun shines all year round, the uniqueness of nature and people"
+"purity of heart is a sign of this"
 
 #: .\templates\index.html:94
 msgid ""
 "Ushbu muborak zaminga kelgan har bir mehmon xursandchilik bilan kutib "
 "olinadi va bir marta tashrif buyurgan kishi yana qaytib kelishni xohlaydi."
 msgstr ""
+"Every guest who comes to this blessed land is welcomed"
+"taken and the person who visited once wants to come back again."
 
 #: .\templates\index.html:96
 msgid "Batafsil"
-msgstr ""
+msgstr "Read more"
 
 #: .\templates\index.html:104
 msgid "Ozbekiston shaharlari"
-msgstr ""
+msgstr "Cities of Uzbekistan"
 
 #: .\templates\index.html:105
 msgid "Sayyohlar uchun mashhur yonalish"
-msgstr ""
+msgstr "A popular destination for tourists"
 
 #: .\templates\index.html:171
 msgid "Fotogalareya"
-msgstr ""
+msgstr "Photo gallery"
 
 #: .\templates\index.html:172
 msgid "Sayyohlar uchun mashhur joylar"
-msgstr ""
+msgstr "Popular places for tourists"
 
 #: .\templates\index.html:200
 msgid "Video galareya"
-msgstr ""
+msgstr "Video gallery"
 
 #: .\templates\index.html:201 .\templates\index.html:266
 #: .\templates\index.html:285
 msgid "Biz bilan sayohat qiling"
-msgstr ""
+msgstr "Travel with us"
 
 #: .\templates\index.html:220
 msgid "Bizning afzaliglarimiz"
-msgstr ""
+msgstr "Our advantages"
 
 #: .\templates\index.html:221
 msgid "Bizning sayyohlar uchun maxsus"
-msgstr ""
+msgstr "Special for our tourists"
 
 #: .\templates\index.html:229
 msgid "Transport hizmati"
-msgstr ""
+msgstr "Transportation service"
 
 #: .\templates\index.html:241
 msgid "5 yulduzli mehmonxona"
-msgstr ""
+msgstr "5 star hotel"
 
 #: .\templates\index.html:253
 msgid "Havfsizlik"
-msgstr ""
+msgstr "Security"
 
 #: .\templates\index.html:265
 msgid "Biz haqimizda"
-msgstr ""
+msgstr "About us"
 
 #: .\templates\index.html:269
 msgid "Bizning Offis"
-msgstr ""
+msgstr "Our office"
 
 #: .\templates\index.html:284
 msgid "Savol va takliflar uchun"
-msgstr ""
+msgstr "For questions and suggestions"
 
 #: .\templates\index.html:296
 msgid "Ism Familiya"
-msgstr ""
+msgstr "Full name"
 
 #: .\templates\index.html:305
 msgid "Telefon raqam"
-msgstr ""
+msgstr "Phone number"
 
 #: .\templates\index.html:314
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: .\templates\index.html:327
 msgid "Savol va Takliflar uchun"
-msgstr ""
+msgstr "For questions and suggestions"
 
 #: .\templates\index.html:337
 msgid "Yuborish"
-msgstr ""
+msgstr "Submit"
 
 #: .\templates\index.html:356
 msgid "Sayyohlar uchun"
-msgstr ""
+msgstr "For Tourists"
 
 #: .\templates\index.html:357
 msgid "Ichki Turizm"
-msgstr ""
+msgstr "Internal Tourism"
 
 #: .\templates\index.html:358
 msgid "Tur opertorlarining reyestri"
-msgstr ""
+msgstr "Register of tour operators"
 
 #: .\templates\index.html:359
 msgid "Online sorovnoma"
-msgstr ""
+msgstr "Online survey"
 
 #: .\templates\index.html:360
 msgid "Ozbekiston xaritasi"
-msgstr ""
+msgstr "Map of Uzbekistan"
 
 #: .\templates\index.html:363
 msgid "Biz bilan aloqa"
-msgstr ""
+msgstr "Contact us"
 
 #: .\templates\index.html:367
 msgid "Andijon, Xojaobod, Yangi hayot MFY, 75-uy"
-msgstr ""
+msgstr "Andijan, Khojaabad, Yangi hayot MFY, house 75"
 
 #: .\travel_agency\settings.py:122
 msgid "English"

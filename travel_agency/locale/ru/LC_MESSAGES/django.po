@@ -49,20 +49,28 @@ msgid ""
 "Shahrisabzdagi Oqsaroy, Buxorodagi Poyi kalon va Labi Hovuz, Xivada minora "
 "va madrasalar barpo etildi"
 msgstr ""
+"«Архитектура расцветает на Великом шелковом пути Узбекистана»"
+"«Он восходит к средневековью, когда он был центром."
+"Всемирно известные архитектурные памятники на земле - Регистан в Самарканде"
+"«Площадь, комплекс Шахи-Зинда, мечеть Бибиханим и мавзолей Гур-Амир»,"
+"«Оксарой в Шахрисабзе, Пойи Калон и Лаби Ховуз в Бухаре, минарет в Хиве»"
+"и медресе построили"
 
 #: .\templates\index.html:74
 msgid "Ozbek madaniy merosi"
-msgstr ""
+msgstr "Узбекское культурное наследие"
 
 #: .\templates\index.html:76
 msgid ""
 "Ozbekiston madaniyati, Markaziy Osiyo xalqlarining kop asrlik ananalari va "
 "turmush tarzi bilan chambarchas bogliq boy tarixga ega"
 msgstr ""
+"«Культура Узбекистана, многовековые традиции народов Средней Азии и»"
+"имеет богатую историю, тесно связанную с образом жизни"
 
 #: .\templates\index.html:80
 msgid "Xalq sanati"
-msgstr ""
+msgstr "Народное искусство"
 
 #: .\templates\index.html:82
 msgid ""
@@ -71,10 +79,14 @@ msgid ""
 "ananalar bizning tariximizni, ajoyib madaniyatimiz va milliy "
 "qadriyatlarimizni unutishga yol bermaydi."
 msgstr ""
+"«Узбекистан всегда был населен уникально талантливыми людьми, а народное творчество встречается редко»"
+"«Они хранят свои традиции и передают их из поколения в поколение."
+"ананасы - это наша история, наша замечательная культура и национальность"
+"«не позволяет нам забыть наши ценности»."
 
 #: .\templates\index.html:92
 msgid "Ozbekistonni ozingiz uchun kashf eting!"
-msgstr ""
+msgstr "Откройте для себя Узбекистан!"
 
 #: .\templates\index.html:93
 msgid ""
@@ -82,121 +94,126 @@ msgid ""
 "toplangan, quyosh yil boyi porlab, tabiatning betakrorligi va odamlarning "
 "yuraklari tozaligi buning nishonasidir"
 msgstr ""
+"«Узбекистан – загадочная страна Востока. Там история в легендах»"
+"собрано, солнце светит круглый год, уникальность природы и людей"
+"чистота сердца есть признак этого"
 
 #: .\templates\index.html:94
 msgid ""
 "Ushbu muborak zaminga kelgan har bir mehmon xursandchilik bilan kutib "
 "olinadi va bir marta tashrif buyurgan kishi yana qaytib kelishni xohlaydi."
 msgstr ""
+"«Каждый гость, который приходит на эту благословенную землю, приветствуется»"
+"взято и человек, побывавший один раз, хочет вернуться снова."
 
 #: .\templates\index.html:96
 msgid "Batafsil"
-msgstr ""
+msgstr "Читать далее"
 
 #: .\templates\index.html:104
 msgid "Ozbekiston shaharlari"
-msgstr ""
+msgstr "Города Узбекистана"
 
 #: .\templates\index.html:105
 msgid "Sayyohlar uchun mashhur yonalish"
-msgstr ""
+msgstr "Популярное место среди туристов"
 
 #: .\templates\index.html:171
 msgid "Fotogalareya"
-msgstr ""
+msgstr "Фотогалерея"
 
 #: .\templates\index.html:172
 msgid "Sayyohlar uchun mashhur joylar"
-msgstr ""
+msgstr "Популярные места для туристов"
 
 #: .\templates\index.html:200
 msgid "Video galareya"
-msgstr ""
+msgstr "Видео галерея"
 
 #: .\templates\index.html:201 .\templates\index.html:266
 #: .\templates\index.html:285
 msgid "Biz bilan sayohat qiling"
-msgstr ""
+msgstr "Путешествуйте с нами"
 
 #: .\templates\index.html:220
 msgid "Bizning afzaliglarimiz"
-msgstr ""
+msgstr "Наши преимущества"
 
 #: .\templates\index.html:221
 msgid "Bizning sayyohlar uchun maxsus"
-msgstr ""
+msgstr "Специально для наших туристов"
 
 #: .\templates\index.html:229
 msgid "Transport hizmati"
-msgstr ""
+msgstr "Транспортные услуги"
 
 #: .\templates\index.html:241
 msgid "5 yulduzli mehmonxona"
-msgstr ""
+msgstr "5-звездочный отель"
 
 #: .\templates\index.html:253
 msgid "Havfsizlik"
-msgstr ""
+msgstr "Безопасность"
 
 #: .\templates\index.html:265
 msgid "Biz haqimizda"
-msgstr ""
+msgstr "насчет нас"
 
 #: .\templates\index.html:269
 msgid "Bizning Offis"
-msgstr ""
+msgstr "Наш офис"
 
 #: .\templates\index.html:284
 msgid "Savol va takliflar uchun"
-msgstr ""
+msgstr "Для вопросов и предложений"
 
 #: .\templates\index.html:296
 msgid "Ism Familiya"
-msgstr ""
+msgstr "Имя Фамилия"
 
 #: .\templates\index.html:305
 msgid "Telefon raqam"
-msgstr ""
+msgstr "Номер телефона"
 
 #: .\templates\index.html:314
 msgid "Email"
-msgstr ""
+msgstr "Эл. адрес"
 
 #: .\templates\index.html:327
 msgid "Savol va Takliflar uchun"
-msgstr ""
+msgstr "Для вопросов и предложений"
 
 #: .\templates\index.html:337
 msgid "Yuborish"
-msgstr ""
+msgstr "Отправлять"
 
 #: .\templates\index.html:356
 msgid "Sayyohlar uchun"
-msgstr ""
+msgstr "Для туристов"
 
 #: .\templates\index.html:357
 msgid "Ichki Turizm"
-msgstr ""
+msgstr "Местный туризм"
 
 #: .\templates\index.html:358
 msgid "Tur opertorlarining reyestri"
-msgstr ""
+msgstr "Реестр туроператоров"
 
 #: .\templates\index.html:359
 msgid "Online sorovnoma"
-msgstr ""
+msgstr "Онлайн-опрос"
 
 #: .\templates\index.html:360
 msgid "Ozbekiston xaritasi"
-msgstr ""
+msgstr "Карта Узбекистана"
 
 #: .\templates\index.html:363
 msgid "Biz bilan aloqa"
-msgstr ""
+msgstr "Свяжитесь с нами"
 
 #: .\templates\index.html:367
 msgid "Andijon, Xojaobod, Yangi hayot MFY, 75-uy"
-msgstr ""
+msgstr "Андижан, Ходжаабад, Новая Жизнь МФЮ, дом 75"
 
 #: .\travel_agency\settings.py:122
 msgid "English"
